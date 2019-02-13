@@ -1,0 +1,73 @@
+.header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba($color-primary, .92), rgba($color-primary, .92)),
+                      url(../img/ctland.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+
+    &-logo-box{
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+    }
+
+    &-logo-img{
+        height: 5rem;
+    }
+
+    &-text-box{
+        display: inline-block;
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50% ,-20%);
+
+
+        &--line{
+            display: inline-block;
+            position: absolute;
+            width: 14rem;
+            height: 1px;
+            background-color: $color-white;
+
+            &-ll{
+                top: 50%;
+                left: -50%;
+            }
+            &-lr{
+                top: 50%;
+                right: -50%;
+            }
+
+            &-lt{
+                width: 7rem;
+                transform: rotate(90deg) translateX(-50%);
+                transform-origin: left;
+                left: 50%;
+                top: -50%;
+               
+            }
+            &-lb{
+                width: 7rem;
+                transform: rotate(90deg) translateX(-50%);
+                transform-origin: left;
+                left: 50%;
+                bottom: -50%;
+               
+            }
+        }
+    }
+
+    &-tag-line{
+        font-size: 4.8rem;
+        text-align: center;
+        font-weight: 100;
+        line-height: 1.2;
+        color: $color-white;
+    }
+
+
+}
