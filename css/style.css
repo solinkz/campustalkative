@@ -14,7 +14,8 @@ body {
 body {
   font-family: 'roboto', sans-serif;
   font-weight: 400;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #777; }
 
 .header {
   height: 70vh;
@@ -25,43 +26,66 @@ body {
   position: relative; }
   .header-logo-box {
     position: absolute;
-    top: 3rem;
-    left: 3rem; }
+    top: 2rem;
+    left: 2rem; }
   .header-logo-img {
     height: 5rem; }
   .header-text-box {
-    display: inline-block;
+    display: block;
     position: absolute;
     bottom: 20%;
     left: 50%;
+    width: 70%;
+    text-align: center;
     transform: translate(-50%, -20%); }
+    .header-text-box--text {
+      display: inline;
+      position: relative;
+      font-size: 3rem;
+      text-align: center;
+      font-weight: 100;
+      line-height: 1.2;
+      color: #fff; }
+      @media (min-width: 36em) {
+        .header-text-box--text {
+          font-size: 4rem; } }
+      @media (min-width: 48em) {
+        .header-text-box--text {
+          font-size: 4.8rem;
+          font-weight: 100; } }
     .header-text-box--line {
       display: inline-block;
       position: absolute;
-      width: 14rem;
+      width: 7rem;
       height: 1px;
       background-color: #fff; }
+      @media (min-width: 36em) {
+        .header-text-box--line {
+          width: 10rem; } }
+      @media (min-width: 48em) {
+        .header-text-box--line {
+          width: 14rem; } }
       .header-text-box--line-ll {
         top: 50%;
-        left: -50%; }
+        right: 100%; }
       .header-text-box--line-lr {
         top: 50%;
-        right: -50%; }
+        left: 110%; }
       .header-text-box--line-lt {
-        width: 7rem;
+        width: 5rem;
         transform: rotate(90deg) translateX(-50%);
         transform-origin: left;
         left: 50%;
         top: -50%; }
+        @media (min-width: 36em) {
+          .header-text-box--line-lt {
+            width: 7rem; } }
       .header-text-box--line-lb {
-        width: 7rem;
+        width: 5rem;
         transform: rotate(90deg) translateX(-50%);
         transform-origin: left;
         left: 50%;
         bottom: -50%; }
-  .header-tag-line {
-    font-size: 4.8rem;
-    text-align: center;
-    font-weight: 100;
-    line-height: 1.2;
-    color: #fff; }
+        @media (min-width: 36em) {
+          .header-text-box--line-lb {
+            width: 7rem; } }

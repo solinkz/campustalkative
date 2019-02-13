@@ -1,0 +1,32 @@
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin  absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+// MEDIA QUERY MANAGER
+
+@mixin respond($breakpoint){
+    @if $breakpoint == phone-land{
+        @media (min-width: 36em ){ @content }; //36em = 576px
+    }
+    @if $breakpoint == tab{
+        @media (min-width: 48em){ @content };  //48em = 768px
+    }
+    @if $breakpoint == desktop{
+        @media (min-width: 62em){ @content };  //62em = 992px
+    }
+    @if $breakpoint == desktop-lg{
+        @media (min-width: 75em){ @content }; //75em = 1200px
+    }
+}
