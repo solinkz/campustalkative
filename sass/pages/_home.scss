@@ -1,26 +1,35 @@
-.main-cta{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem 2rem;
+.section-main{
+    .main-caption{
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 1rem;
+        font-weight: 300;
 
-    @include respond(desktop){
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 5rem 2rem 4rem 2rem;
     }
-
-    &--btn{
-      width: 28rem;
-      font-size: 1.8rem;
-
-      &:not(:last-child){
-          margin-bottom: 2rem;
-          @include respond(desktop){
-            margin-bottom: 0;
-            margin-right: 2rem;
+    .main-cta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    
+        @include respond(desktop){
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 0;
         }
-      }
+    
+        &--btn{
+          width: 28rem;
+          font-size: 1.8rem;
+    
+          &:not(:last-child){
+              margin-bottom: 1rem;
+              @include respond(desktop){
+                margin-bottom: 0;
+                margin-right: 2rem;
+            }
+          }
+        }
     }
 }
