@@ -1,3 +1,11 @@
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 20%); }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -20%); } }
+
 *,
 *:after,
 *:before {
@@ -45,17 +53,17 @@ body {
 
 .btn-primary, .btn-primary:link, .btn-primary:active:focus {
   color: #fff;
-  background-color: #F5970A !important;
+  background-color: #f6891f !important;
   outline: none;
   border: none !important; }
 
 .btn-primary:hover {
-  background-color: #e68e09; }
+  background-color: #f58110; }
 
 .header {
   height: 70vh;
   width: 100%;
-  background-image: linear-gradient(rgba(245, 151, 10, 0.92), rgba(245, 151, 10, 0.92)), url(../img/ctland.jpg);
+  background-image: linear-gradient(rgba(246, 137, 31, 0.92), rgba(246, 137, 31, 0.92)), url(../img/ctland.jpg);
   background-size: cover;
   background-position: center center;
   position: relative; }
@@ -72,7 +80,8 @@ body {
     left: 50%;
     width: 70%;
     text-align: center;
-    transform: translate(-50%, -20%); }
+    transform: translate(-50%, -20%);
+    animation: moveInBottom .5s ease-out; }
     .header-text-box--text {
       display: inline;
       position: relative;
@@ -123,10 +132,10 @@ body {
             width: 7rem; } }
 
 .section-main .main-caption {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   text-align: center;
   padding: 1rem;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .section-main .main-cta {
   display: flex;

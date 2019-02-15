@@ -28,6 +28,8 @@
         width: 70%;
         text-align: center;
         transform: translate(-50% ,-20%);
+        animation: moveInBottom .5s ease-out;
+
 
         &--text{
             display: inline;
@@ -37,7 +39,7 @@
             font-weight: 300;
             line-height: 1.2;
             color: $color-white;
-
+           
             
             @include respond(tab){
                 font-size: 4.8rem;
