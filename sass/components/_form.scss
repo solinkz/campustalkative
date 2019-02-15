@@ -71,7 +71,10 @@
 
     &-submit{
         width: 70%;
-        font-size: $default-font-size;
-        text-align: center;
+        font-size: 2.2rem;
+        text-align:center;
+        @include respond(tab){
+            font-size: 1.6rem;
+        }
     }
 }
