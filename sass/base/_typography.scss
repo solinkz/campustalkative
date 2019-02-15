@@ -4,3 +4,21 @@ body{
     line-height: 1.5;
     color: $color-dark-grey;
 }
+
+a{
+    &,
+    &:link,
+    &:visited,
+    &:active{
+
+        color: $color-primary;
+        text-decoration: none;
+        font-size: $default-font-size;
+    }
+
+    &:hover{
+        color: darken($color-primary, 10%);
+    }
+
+
+}

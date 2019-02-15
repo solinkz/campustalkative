@@ -2,7 +2,7 @@
     &,
     &:link,
     &:visited{
-        padding: 1.5rem 2rem;
+        padding: 1.2rem 2rem;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -27,7 +27,8 @@
     &-primary{
         &,
         &:link,
-        &:active:focus{
+        &:active:focus,
+        &:visited{
             color: $color-white;
             background-color: $color-primary !important;
             outline: none;

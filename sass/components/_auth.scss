@@ -1,0 +1,42 @@
+.auth{
+    width: 40rem;
+    // height: 75vh;
+    background: $color-white;
+    
+    @include respond(tab){
+        width: 40rem;
+        box-shadow: 0 1rem 2rem rgba($color-black, .1);
+        // border: 1px solid $color-primary-light;
+        border-radius: .5rem;
+    }
+
+    &-header{
+        text-align: center;
+        padding: 3rem 2rem 2rem 2rem;
+        margin-bottom: 2rem;
+
+        &--img{
+            height: 4rem;
+        }
+    }
+    
+    &-form{
+        padding: 2rem 3rem;
+    }
+
+    &-forgot-password{
+        display: block;
+        text-align: center;
+        margin: 3rem 0;
+        color: $color-secondary !important;
+    }
+
+    &-type{
+        text-align: center;
+        font-size: $default-font-size;
+        padding: 0 3rem;
+        font-weight: 400;
+        color: $color-secondary;
+    }
+    
+}

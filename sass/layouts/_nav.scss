@@ -1,0 +1,19 @@
+.nav{
+    display: flex;
+
+    &-auth{
+        padding: 2rem;
+
+        @include respond(desktop){
+            display: none;
+            padding: 0;
+        }
+    }
+
+
+    &-icon{
+        font-size: 3rem;
+    }
+
+
+}
