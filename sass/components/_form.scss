@@ -33,6 +33,7 @@
 
         @include respond(tab){
             font-size: 1.8rem;
+            margin-top: 0;
         }
         
         &:focus{

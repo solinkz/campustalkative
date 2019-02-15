@@ -116,7 +116,8 @@ a:hover {
     margin-top: 2rem; }
     @media (min-width: 48em) {
       .form-control.form-control--auth {
-        font-size: 1.8rem; } }
+        font-size: 1.8rem;
+        margin-top: 0; } }
     .form-control.form-control--auth:focus {
       border-bottom: 1px solid #f6891f; }
     .form-control.form-control--auth::-webkit-input-placeholder {
