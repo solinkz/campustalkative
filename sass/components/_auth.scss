@@ -1,8 +1,9 @@
 .auth{
-    width: 40rem;
-    // height: 75vh;
+    width: 100%;
     background: $color-white;
-    
+    @include respond(phone-land){      
+        width: 40rem;
+    }
     @include respond(tab){
         width: 40rem;
         box-shadow: 0 1rem 2rem rgba($color-black, .1);
@@ -16,8 +17,15 @@
         margin-bottom: 2rem;
 
         &--img{
-            height: 4rem;
+            height: 5rem;
+            @include respond(phone-land){      
+                height: 4.5rem;
+            }
+            @include respond(tab){      
+                height: 4rem;
+            }
         }
+
     }
     
     &-form{
@@ -25,18 +33,43 @@
     }
 
     &-forgot-password{
+        &,
+        &:link,
+        &:visited,
+        &:active{
+            font-size: 2.2rem;
+            color: $color-secondary;
+
+            @include respond(tab){      
+                font-size: 1.6rem;            
+            }
+        }
         display: block;
         text-align: center;
         margin: 3rem 0;
-        color: $color-secondary !important;
     }
 
     &-type{
         text-align: center;
-        font-size: $default-font-size;
+        font-size: 2.2rem;
         padding: 0 3rem;
         font-weight: 400;
         color: $color-secondary;
+        @include respond(tab){      
+            font-size: 1.6rem;            
+        }
+        &--link{
+            &,
+            &:link,
+            &:visited,
+            &:active{
+                font-size: 2.2rem;
+
+                @include respond(tab){      
+                    font-size: 1.6rem;            
+                }
+            }
+        }
     }
     
 }

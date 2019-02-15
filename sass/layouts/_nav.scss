@@ -3,7 +3,11 @@
 
     &-auth{
         padding: 2rem;
-
+        
+        // @include respond(tab){
+        //     display: none;
+        //     padding: 0;
+        // }
         @include respond(desktop){
             display: none;
             padding: 0;
@@ -12,7 +16,12 @@
 
 
     &-icon{
-        font-size: 3rem;
+        &,
+        &:link,
+        &:visited,
+        &:active{
+            font-size: 3rem;
+        }
     }
 
 
