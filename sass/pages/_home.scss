@@ -36,12 +36,16 @@
 
 .section-auth{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     
     @include respond(desktop){
-        align-items: center;
+        justify-content: flex-end;
         height: 100vh;
-        background-image: linear-gradient(to bottom, $color-primary 0%, $color-primary 50%, $color-white 50% );
+        background-image: linear-gradient(to bottom,
+                                           $color-primary 0%,
+                                           $color-primary 50%,
+                                            $color-white 50% );
+        padding-bottom: 3rem;
     }
 }

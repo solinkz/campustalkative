@@ -39,6 +39,26 @@ a, a:link, a:visited, a:active {
 a:hover {
   color: #d97009; }
 
+.heading-primary {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  padding: 1rem 2rem; }
+  @media (min-width: 48em) {
+    .heading-primary {
+      font-size: 4rem; } }
+  .heading-primary--auth {
+    color: #3D3D3D;
+    text-align: center; }
+    @media (min-width: 62em) {
+      .heading-primary--auth {
+        color: #fff; } }
+
+.text-primary {
+  color: #f6891f !important; }
+
 .auth {
   width: 100%;
   background: #fff; }
@@ -285,10 +305,11 @@ a:hover {
 
 .section-auth {
   display: flex;
-  flex-direction: row;
-  justify-content: center; }
+  flex-direction: column;
+  align-items: center; }
   @media (min-width: 62em) {
     .section-auth {
-      align-items: center;
+      justify-content: flex-end;
       height: 100vh;
-      background-image: linear-gradient(to bottom, #f6891f 0%, #f6891f 50%, #fff 50%); } }
+      background-image: linear-gradient(to bottom, #f6891f 0%, #f6891f 50%, #fff 50%);
+      padding-bottom: 3rem; } }

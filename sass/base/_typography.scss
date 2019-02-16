@@ -22,3 +22,24 @@ a{
 
 
 }
+
+.heading-primary{
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    padding: 1rem 2rem;
+
+    @include respond(tab){
+        font-size: 4rem
+    }
+    &--auth{
+        color: $color-secondary;
+        text-align: center;
+
+        @include respond(desktop){
+            color: $color-white;
+        }
+    }
+}
