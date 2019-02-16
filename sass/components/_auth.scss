@@ -13,8 +13,8 @@
 
     &-header{
         text-align: center;
-        padding: 3rem 2rem 2rem 2rem;
-        margin-bottom: 2rem;
+        padding: 2rem;
+        // margin-bottom: 2rem;
 
         &--img{
             height: 5rem;
@@ -29,7 +29,7 @@
     }
     
     &-form{
-        padding: 2rem 3rem;
+        padding: .5rem 3rem;
     }
 
     &-forgot-password{
