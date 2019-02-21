@@ -347,7 +347,10 @@ a:hover {
     font-size: 3rem; }
   .nav .material-icons {
     line-height: 1.5;
-    font-size: 2.5rem; }
+    font-size: 3.2rem; }
+    @media (min-width: 48em) {
+      .nav .material-icons {
+        font-size: 2.5rem; } }
 
 .section-main .main-caption {
   font-size: 1.9rem;
