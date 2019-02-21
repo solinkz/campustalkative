@@ -1,6 +1,9 @@
 .nav{
     display: flex;
 
+    //  Navigation for authentication page
+    // ( Login / signup)
+
     &-auth{
         padding: 2rem;
         
@@ -15,6 +18,109 @@
     }
 
 
+
+    &-brand{
+        height: 4rem;
+
+        @include respond(desktop){
+            margin-right: 4rem;
+        }
+    }
+
+    &-logo{
+        height: 4rem;
+    }
+
+    // Pc views navigation container 
+
+    &-bar{
+        @include respond(desktop){
+
+            position: relative;
+            background-color: $color-white;
+            height: $nav-height;
+            box-shadow: 0 2px .5rem rgba($color-black, .1);
+        }
+
+    }
+
+
+    &-container{
+        @include respond(desktop){
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    &-main{
+        height: $nav-height;
+        background-color: $color-white;
+        padding: 0 2rem;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(desktop){
+            position: relative;
+            justify-content: flex-start;
+        }
+
+        &--top{
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px .5rem rgba($color-black, .1);
+            @include respond(desktop){
+                box-shadow: none;
+            }
+        }
+        
+        &--bottom{
+            bottom: 0;
+            left: 0;
+            box-shadow: 0 -2px .5rem rgba($color-black, .1);
+            @include respond(desktop){
+                box-shadow: none;
+                flex: 30% 0 0;
+            }
+        }
+    }
+
+    &-menu{
+        list-style-type: none;
+        margin-bottom: 0;
+
+        &--bottom{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            
+            @include respond(desktop){
+                justify-content: space-between;
+            }
+        }
+    }
+
+    &-item{
+        display: inline;
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+        
+        a{
+            font-size: 2rem;
+            color: $color-dark-grey;
+        }
+
+        &.active{
+            a{
+                color: $color-primary;
+            }
+        }
+    }
+
     &-icon{
         &,
         &:link,
@@ -24,5 +130,9 @@
         }
     }
 
+    .material-icons{
+        line-height: 1.5; 
+        font-size: 2.5rem;
+    }
 
 }

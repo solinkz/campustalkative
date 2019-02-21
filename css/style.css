@@ -25,6 +25,11 @@ html {
 body {
   box-sizing: border-box; }
 
+#app-main {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f7f7f7; }
+
 body {
   font-family: 'roboto', sans-serif;
   font-weight: 400;
@@ -273,8 +278,76 @@ a:hover {
       .nav-auth {
         display: none;
         padding: 0; } }
+  .nav-brand {
+    height: 4rem; }
+    @media (min-width: 62em) {
+      .nav-brand {
+        margin-right: 4rem; } }
+  .nav-logo {
+    height: 4rem; }
+  @media (min-width: 62em) {
+    .nav-bar {
+      position: relative;
+      background-color: #fff;
+      height: 6rem;
+      box-shadow: 0 2px 0.5rem rgba(0, 0, 0, 0.1); } }
+  @media (min-width: 62em) {
+    .nav-container {
+      display: flex;
+      justify-content: space-around; } }
+  .nav-main {
+    height: 6rem;
+    background-color: #fff;
+    padding: 0 2rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    @media (min-width: 62em) {
+      .nav-main {
+        position: relative;
+        justify-content: flex-start; } }
+    .nav-main--top {
+      top: 0;
+      left: 0;
+      box-shadow: 0 2px 0.5rem rgba(0, 0, 0, 0.1); }
+      @media (min-width: 62em) {
+        .nav-main--top {
+          box-shadow: none; } }
+    .nav-main--bottom {
+      bottom: 0;
+      left: 0;
+      box-shadow: 0 -2px 0.5rem rgba(0, 0, 0, 0.1); }
+      @media (min-width: 62em) {
+        .nav-main--bottom {
+          box-shadow: none;
+          flex: 30% 0 0; } }
+  .nav-menu {
+    list-style-type: none;
+    margin-bottom: 0; }
+    .nav-menu--bottom {
+      display: flex;
+      justify-content: space-around;
+      width: 100%; }
+      @media (min-width: 62em) {
+        .nav-menu--bottom {
+          justify-content: space-between; } }
+  .nav-item {
+    display: inline; }
+    .nav-item:not(:last-child) {
+      margin-right: 2rem; }
+    .nav-item a {
+      font-size: 2rem;
+      color: #777; }
+    .nav-item.active a {
+      color: #f6891f; }
   .nav-icon, .nav-icon:link, .nav-icon:visited, .nav-icon:active {
     font-size: 3rem; }
+  .nav .material-icons {
+    line-height: 1.5;
+    font-size: 2.5rem; }
 
 .section-main .main-caption {
   font-size: 1.9rem;

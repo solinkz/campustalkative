@@ -22,3 +22,11 @@ html{
 body{
     box-sizing: border-box;
 }
+
+#app-main{
+    position: relative;
+    min-height: 100vh;
+    background-color: $color-lighter-grey;
+
+
+}
