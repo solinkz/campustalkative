@@ -1,0 +1,21 @@
+.img{
+
+
+    &-circle{
+        clip-path: circle(50% at 50% 50%);
+        text-align: center;
+
+        &--lg{
+            width: 6rem;
+            height: 6rem;
+        }
+        &--sm{
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+    &-avatar{
+        height: 100%;
+    }
+}

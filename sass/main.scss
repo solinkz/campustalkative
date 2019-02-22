@@ -9,8 +9,12 @@
 @import "components/auth";
 @import "components/form";
 @import "components/button";
+@import "components/image";
+@import "components/image-user-action";
+@import "components/news-card";
 
 @import "layouts/header";
 @import "layouts/nav";
 
+@import "pages/pre-home";
 @import "pages/home";

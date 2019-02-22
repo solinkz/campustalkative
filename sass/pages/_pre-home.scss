@@ -1,0 +1,51 @@
+.section-main{
+    .main-caption{
+        font-size: 1.9rem;
+        text-align: center;
+        padding: 1rem;
+        font-weight: 400;
+
+    }
+    .main-cta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    
+        @include respond(desktop){
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+    
+        &--btn{
+          width: 28rem;
+          font-size: 1.8rem;
+    
+          &:not(:last-child){
+              margin-bottom: 1rem;
+              @include respond(desktop){
+                margin-bottom: 0;
+                margin-right: 2rem;
+            }
+          }
+        }
+    }
+}
+
+.section-auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include respond(desktop){
+        justify-content: flex-end;
+        height: 100vh;
+        background-image: linear-gradient(to bottom,
+                                           $color-primary 0%,
+                                           $color-primary 50%,
+                                            $color-white 50% );
+        padding-bottom: 3rem;
+    }
+}

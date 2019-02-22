@@ -1,0 +1,27 @@
+.iua{
+    display: flex;
+    align-items: center;
+
+    &-body{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-name{
+        font-size: 2rem;
+    }
+    a.iua-link{
+        font-size: 2rem;
+        color: $color-secondary;
+    }
+
+    &-misc{
+        display: flex;
+        align-items: center;
+    }
+
+    &-time{
+        font-size: $default-font-size;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}

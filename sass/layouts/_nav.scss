@@ -62,6 +62,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        z-index: 4;
 
         @include respond(desktop){
             position: relative;
@@ -112,12 +113,21 @@
         a{
             font-size: 2rem;
             color: $color-dark-grey;
+            transition: all .3s;
+            @include respond(desktop){
+                
+                .material-icons:hover{
+                    transform: scale(1.5);
+                }
+            }
         }
 
         &.active{
             a{
                 color: $color-primary;
+               
             }
+
         }
     }
 
@@ -133,6 +143,8 @@
     .material-icons{
         line-height: 1.5; 
         font-size: 3rem;
+        transition: all .2s;
+        backface-visibility: hidden;
         
         @include respond(tab){
             
