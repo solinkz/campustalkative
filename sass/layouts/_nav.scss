@@ -36,7 +36,11 @@
     &-bar{
         @include respond(desktop){
 
-            position: relative;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 4;
             background-color: $color-white;
             height: $nav-height;
             box-shadow: 0 2px .5rem rgba($color-black, .1);
@@ -65,6 +69,7 @@
         z-index: 4;
 
         @include respond(desktop){
+            
             position: relative;
             justify-content: flex-start;
         }

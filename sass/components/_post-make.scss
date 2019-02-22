@@ -1,0 +1,30 @@
+.post-make{
+
+    background-color: $color-white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+
+    &--mock{
+        cursor: pointer;
+    }
+
+    &-header{
+        padding: 1rem 2rem;
+        border-bottom:1px solid rgba($color-black, .1); 
+    }
+    &-body{
+        padding: 2rem;
+        border-bottom:1px solid rgba($color-black, .1); 
+    }
+
+    &-footer{
+        display: flex;
+        padding: 1rem 2rem;
+        justify-content: flex-end;
+    }
+    &-option{
+        margin-right: 2rem;
+        display: flex;
+        align-items: center;
+    }
+}

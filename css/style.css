@@ -29,6 +29,12 @@ body {
   position: relative;
   min-height: 100vh;
   background-color: #f7f7f7; }
+  @media (min-width: 62em) {
+    #app-main {
+      padding-top: 8rem; } }
+
+::selection {
+  background-color: #fef0e3; }
 
 body {
   font-family: 'roboto', sans-serif;
@@ -61,6 +67,14 @@ a:hover {
     @media (min-width: 62em) {
       .heading-primary--auth {
         color: #fff; } }
+
+.heading-secondary {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 1rem 2rem;
+  color: #3D3D3D; }
 
 .text-primary {
   color: #f6891f !important; }
@@ -234,6 +248,7 @@ a:hover {
 
 .news-card {
   background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden; }
   .news-card:not(:last-child) {
@@ -279,8 +294,31 @@ a:hover {
     color: #fff !important;
     border-radius: 5px;
     line-height: 1.5; }
+  .news-card-share {
+    cursor: pointer; }
   .news-card .more {
     display: none; }
+
+.post-make {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 1rem; }
+  .post-make--mock {
+    cursor: pointer; }
+  .post-make-header {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .post-make-body {
+    padding: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .post-make-footer {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: flex-end; }
+  .post-make-option {
+    margin-right: 2rem;
+    display: flex;
+    align-items: center; }
 
 .header {
   height: 70vh;
@@ -370,7 +408,11 @@ a:hover {
     height: 4rem; }
   @media (min-width: 62em) {
     .nav-bar {
-      position: relative;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 4;
       background-color: #fff;
       height: 6rem;
       box-shadow: 0 2px 0.5rem rgba(0, 0, 0, 0.1); } }
@@ -489,7 +531,7 @@ a:hover {
   margin-bottom: 6rem; }
   @media (min-width: 62em) {
     .main-content {
-      margin-top: 2rem;
+      margin-top: 0rem;
       margin-bottom: 0;
       padding: 2rem; } }
   .main-content--left {

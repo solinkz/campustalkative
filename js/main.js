@@ -9,5 +9,10 @@ $(document).ready(function(){
         }
     });
 
+    // toggle liked icon on click
+
+    $("#like").on('click', function(){
+        $(this).find(".material-icons").toggleClass('liked');
+    });
 
 });
