@@ -1,16 +1,16 @@
 .compose{
 
     &-toggle{
-        width: 10rem;
-        height: 10rem;
+        width: 7rem;
+        height: 7rem;
         background-color: $color-primary;
         color: $color-white;
         display: flex;
         align-items: center;
         justify-content: center;
         position: fixed;
-        right: 7vh;
-        bottom: 10vh;
+        right: 7%;
+        bottom: 10%;
         border-radius: 50%;
         border: none;
         outline: none;
@@ -20,8 +20,8 @@
         cursor: pointer;
 
         @include respond(tab){
-            width: 8rem;
-            height: 8rem;
+            width: 6rem;
+            height: 6rem;
             right: 10vh;
         }
 

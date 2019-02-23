@@ -139,16 +139,16 @@ a:hover {
     background-color: transparent; }
 
 .compose-toggle {
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   background-color: #f6891f;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
-  right: 7vh;
-  bottom: 10vh;
+  right: 7%;
+  bottom: 10%;
   border-radius: 50%;
   border: none;
   outline: none;
@@ -158,8 +158,8 @@ a:hover {
   cursor: pointer; }
   @media (min-width: 48em) {
     .compose-toggle {
-      width: 8rem;
-      height: 8rem;
+      width: 6rem;
+      height: 6rem;
       right: 10vh; } }
   .compose-toggle:hover {
     transform: scale(1.03) rotate(360deg); }
