@@ -26,6 +26,7 @@
 
         @include respond(desktop){
             display: block;
+            flex: calc(40% - 5rem) 0 0;
         }
     }
 

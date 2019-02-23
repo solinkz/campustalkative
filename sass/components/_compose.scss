@@ -1,0 +1,88 @@
+.compose{
+
+    &-toggle{
+        width: 10rem;
+        height: 10rem;
+        background-color: $color-primary;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 7vh;
+        bottom: 10vh;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        z-index: 3;
+        transition: all .3s;
+        backface-visibility: hidden;
+        cursor: pointer;
+
+        @include respond(tab){
+            width: 8rem;
+            height: 8rem;
+            right: 10vh;
+        }
+
+        &:hover{
+            transform: scale(1.03) rotate(360deg);
+        }
+        &:focus{
+            outline: none;
+        }
+
+    }
+
+    &-btn{
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        line-height: 1;
+    }
+    &-upload{
+        opacity: 0;
+        visibility: hidden;
+    }
+    textarea.compose-text-area{
+        border: 1px solid rgba($color-black, .1);
+        font-size: 2.2rem ;
+    }
+    .modal{
+
+        background-color: $color-white;
+
+        @include respond(phone-land){
+            background-color: transparent;
+        }
+        
+        &-dialog{
+            margin: 0;
+            @include respond(phone-land){
+                margin: 1.75rem auto;
+                
+            }
+            @include respond(tab){
+                max-width: 60rem;
+            }
+        }
+        
+        &-content{
+            border: none;
+        }
+        
+        &-body{
+            margin-top: 4rem;
+            @include respond(phone-land){
+                margin-top: 1rem;
+            }
+        }
+        
+        &-footer{
+            border: none;
+            @include respond(phone-land){
+                border-top: 1px solid rgba($color-black, .1);
+            }
+        }
+    }
+}

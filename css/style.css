@@ -128,6 +128,84 @@ a:hover {
         .auth-type--link, .auth-type--link:link, .auth-type--link:visited, .auth-type--link:active {
           font-size: 1.6rem; } }
 
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden; }
+  .card-aside {
+    width: 100%; }
+  .card-header {
+    background-color: transparent; }
+
+.compose-toggle {
+  width: 10rem;
+  height: 10rem;
+  background-color: #f6891f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 7vh;
+  bottom: 10vh;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  z-index: 3;
+  transition: all .3s;
+  backface-visibility: hidden;
+  cursor: pointer; }
+  @media (min-width: 48em) {
+    .compose-toggle {
+      width: 8rem;
+      height: 8rem;
+      right: 10vh; } }
+  .compose-toggle:hover {
+    transform: scale(1.03) rotate(360deg); }
+  .compose-toggle:focus {
+    outline: none; }
+
+.compose-btn {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1; }
+
+.compose-upload {
+  opacity: 0;
+  visibility: hidden; }
+
+.compose textarea.compose-text-area {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 2.2rem; }
+
+.compose .modal {
+  background-color: #fff; }
+  @media (min-width: 36em) {
+    .compose .modal {
+      background-color: transparent; } }
+  .compose .modal-dialog {
+    margin: 0; }
+    @media (min-width: 36em) {
+      .compose .modal-dialog {
+        margin: 1.75rem auto; } }
+    @media (min-width: 48em) {
+      .compose .modal-dialog {
+        max-width: 60rem; } }
+  .compose .modal-content {
+    border: none; }
+  .compose .modal-body {
+    margin-top: 4rem; }
+    @media (min-width: 36em) {
+      .compose .modal-body {
+        margin-top: 1rem; } }
+  .compose .modal-footer {
+    border: none; }
+    @media (min-width: 36em) {
+      .compose .modal-footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.1); } }
+
 .form {
   padding: 2rem;
   font-size: 1.6rem; }
@@ -237,7 +315,9 @@ a:hover {
     font-size: 2rem; }
   .iua a.iua-link {
     font-size: 2rem;
-    color: #3D3D3D; }
+    color: #3D3D3D;
+    margin: 0;
+    display: block; }
   .iua-misc {
     display: flex;
     align-items: center; }
@@ -545,4 +625,5 @@ a:hover {
     display: none; }
     @media (min-width: 62em) {
       .main-content--right {
-        display: block; } }
+        display: block;
+        flex: calc(40% - 5rem) 0 0; } }
