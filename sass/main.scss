@@ -17,9 +17,11 @@
 @import "components/news-card";
 @import "components/post-make";
 
+@import "layouts/app-secondary";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/nav";
 
-@import "pages/pre-home";
 @import "pages/home";
+@import "pages/pre-home";
+@import "pages/post-view";

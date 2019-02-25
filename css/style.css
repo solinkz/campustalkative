@@ -76,6 +76,14 @@ a:hover {
   padding: 1rem 2rem;
   color: #3D3D3D; }
 
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 1rem 2rem;
+  color: #3D3D3D; }
+
 .text-primary {
   color: #f6891f !important; }
 
@@ -138,10 +146,38 @@ a:hover {
   .card-header {
     background-color: transparent; }
 
-.comment {
-  padding: 0 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+.comment-sec {
+  padding: 1rem 2rem;
+  padding-bottom: 6rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative; }
+  .comment-sec-comment {
+    font-size: 1.4rem; }
+  .comment-sec-list {
+    margin-bottom: 1rem; }
+  .comment-sec-field {
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+  .comment-sec-form {
+    display: flex;
+    justify-content: space-around; }
+  .comment-sec-text {
+    width: 90%;
+    border: none;
+    padding: 0 2rem;
+    resize: none; }
+    .comment-sec-text:focus {
+      border: none;
+      outline: none; }
+  .comment-sec-send {
+    border: none;
+    background-color: transparent;
+    cursor: pointer; }
+    .comment-sec-send:foucs {
+      outline: none; }
 
 .compose-toggle {
   width: 7rem;
@@ -403,6 +439,40 @@ a:hover {
     display: flex;
     align-items: center; }
 
+#app-main-secondary .nav-main {
+  display: none; }
+  @media (min-width: 62em) {
+    #app-main-secondary .nav-main {
+      display: flex; } }
+
+#app-main-secondary main.content .container {
+  margin: 0;
+  padding: 0; }
+  @media (min-width: 62em) {
+    #app-main-secondary main.content .container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+#app-main-secondary main.content .main-content {
+  margin-top: 0; }
+  @media (min-width: 62em) {
+    #app-main-secondary main.content .main-content {
+      margin-top: 6rem; } }
+
+#app-main-secondary main.content .news-card {
+  border-radius: 0; }
+  @media (min-width: 62em) {
+    #app-main-secondary main.content .news-card {
+      border-radius: 8px; } }
+
+#app-main-secondary main.content .comment-sec-field {
+  position: fixed; }
+  @media (min-width: 62em) {
+    #app-main-secondary main.content .comment-sec-field {
+      position: absolute; } }
+
 .header {
   height: 70vh;
   width: 100%;
@@ -498,6 +568,20 @@ a:hover {
       .nav-auth {
         display: none;
         padding: 0; } }
+  .nav-sub {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    z-index: 5; }
+    @media (min-width: 62em) {
+      .nav-sub {
+        display: none; } }
+    .nav-sub a {
+      color: #fff; }
   .nav-brand {
     height: 4rem; }
     @media (min-width: 62em) {
@@ -583,6 +667,32 @@ a:hover {
       .nav .material-icons {
         font-size: 2.5rem; } }
 
+.main-content {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  width: 100%;
+  margin-top: 8rem;
+  margin-bottom: 6rem; }
+  @media (min-width: 62em) {
+    .main-content {
+      margin-top: 0rem;
+      margin-bottom: 0;
+      padding: 2rem; } }
+  .main-content--left {
+    margin-right: 0;
+    flex: 100%; }
+    @media (min-width: 62em) {
+      .main-content--left {
+        margin-right: 5rem;
+        flex: 60% 0 0; } }
+  .main-content--right {
+    display: none; }
+    @media (min-width: 62em) {
+      .main-content--right {
+        display: block;
+        flex: calc(40% - 5rem) 0 0; } }
+
 .section-main .main-caption {
   font-size: 1.9rem;
   text-align: center;
@@ -620,29 +730,3 @@ a:hover {
       height: 100vh;
       background-image: linear-gradient(to bottom, #f6891f 0%, #f6891f 50%, #fff 50%);
       padding-bottom: 3rem; } }
-
-.main-content {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  width: 100%;
-  margin-top: 8rem;
-  margin-bottom: 6rem; }
-  @media (min-width: 62em) {
-    .main-content {
-      margin-top: 0rem;
-      margin-bottom: 0;
-      padding: 2rem; } }
-  .main-content--left {
-    margin-right: 0;
-    flex: 100%; }
-    @media (min-width: 62em) {
-      .main-content--left {
-        margin-right: 5rem;
-        flex: 60% 0 0; } }
-  .main-content--right {
-    display: none; }
-    @media (min-width: 62em) {
-      .main-content--right {
-        display: block;
-        flex: calc(40% - 5rem) 0 0; } }

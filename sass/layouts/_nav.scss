@@ -17,7 +17,24 @@
         }
     }
 
+    &-sub{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba($color-black, .5);
+        padding: 1rem 2rem;
+        z-index: 5;
 
+        @include respond(desktop){
+            display: none;
+        }
+
+        a{
+            color: $color-white;
+        }
+    }
 
     &-brand{
         height: 4rem;

@@ -18,10 +18,13 @@
     <title>Campustalkative - Post</title>
 
 </head>
-    <div id="app-main">
+    <div id="app-main-secondary">
        <nav class="nav nav-bar">
             <div class="container nav-container">
-
+                <!-- NAV SUB FOR MOBILE-->
+                <div class="nav-sub">
+                    <a href="#" class="nav-icon"><i class="material-icons">arrow_back</i></a>
+                </div>
                 <!-- NAV TOP FOR MOBILE -->
                 <div class="nav-main nav-main--top">
                     <a href="#" class="nav-brand">
@@ -128,19 +131,39 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iusto, amet ad repudiandae quas rem dolorum ullam laboriosam.
                                 </div>
 
-                                <div class="comment">
-                                    <div class="comment-list">
-                                        <li class="comment-item">
+                                <div class="comment-sec">
+                                    <h3 class="heading-tertiary">Comments</h3>
+                                    <div class="comment-sec-list">
+                                        <div class="comment-sec-item">
                                             <div class="media">
                                                 <img src="../img/a3.jpg" alt="avatar" class="img-circle img-circle--sm">
                                                 <div class="media-body pl-4">
-                                                    <a href="#" class="comment-name">Sophia Phil</a>
-                                                    <div class="comment-comment">
+                                                    <a href="#" class="comment-sec-name">Sophia Phil</a>
+                                                    <div class="comment-sec-comment">
                                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor totam nesciunt obcaecati. Totam pariatur non officiis tenetur voluptatem .
                                                     </div>
                                                 </div>
                                             </div>
-                                        </li>
+                                        </div>
+                                    </div>
+                                    <div class="comment-sec-list">
+                                        <div class="comment-sec-item">
+                                            <div class="media">
+                                                <img src="../img/a4.jpg" alt="avatar" class="img-circle img-circle--sm">
+                                                <div class="media-body pl-4">
+                                                    <a href="#" class="comment-sec-name">hills mount</a>
+                                                    <div class="comment-sec-comment">
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor totam nesciunt obcaecati. Totam pariatur non officiis tenetur voluptatem .
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-sec-field">
+                                        <form action="" method="post" class="comment-sec-form">
+                                            <textarea name="comment" id="comment" class="comment-sec-text" placeholder="comment..."></textarea>
+                                            <button type="submit" class="comment-sec-send"><i class="material-icons">send</i></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
