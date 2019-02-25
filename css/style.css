@@ -138,6 +138,11 @@ a:hover {
   .card-header {
     background-color: transparent; }
 
+.comment {
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
 .compose-toggle {
   width: 7rem;
   height: 7rem;
@@ -311,8 +316,6 @@ a:hover {
   .iua-body {
     display: flex;
     justify-content: space-between; }
-  .iua-name {
-    font-size: 2rem; }
   .iua a.iua-link {
     font-size: 2rem;
     color: #3D3D3D;
@@ -470,6 +473,22 @@ a:hover {
         @media (min-width: 36em) {
           .header-text-box--line-lb {
             width: 7rem; } }
+
+.footer {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 2rem; }
+  .footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .footer-list a {
+      color: #777; }
+  .footer-copyright {
+    text-align: center;
+    margin-top: 1rem; }
 
 .nav {
   display: flex; }

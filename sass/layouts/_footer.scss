@@ -1,0 +1,24 @@
+.footer{
+    background-color: $color-white;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba($color-black, .1);
+    margin-top: 2rem;
+
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        a{
+            color: $color-dark-grey;
+        }
+    }
+
+
+
+    &-copyright{
+        text-align: center;
+        margin-top: 1rem;
+    }
+}

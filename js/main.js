@@ -11,8 +11,60 @@ $(document).ready(function(){
 
     // toggle liked icon on click
 
-    $("#like").on('click', function(){
+    $(".like").on('click', function(){
         $(this).find(".material-icons").toggleClass('liked');
     });
+
+
+    // word counter on compose
+    (
+        function composeCounter() {
+            var composer = {
+                limit: 1500,
+                count: {
+                    box : $('.compose-count'), 
+                    display : $('.word-count')
+                },
+                warning: function () {
+                    // 20% of the compose limit
+                    return (this.limit - ( (2 / 100) * this.limit) ) .toFixed(0);
+                },
+                area: $('#compose-area')
+            }
+
+            // alert(data.warning());
+
+            //  update the data limit on the view
+            $('.word-length').text(composer.limit);
+
+            // update data-limit on the textarea
+            composer.area.attr('maxlength', composer.limit);
+
+            composer.area.keyup(function(){
+                let composed = $(this).val();
+                let composedLength = composed.length;
+
+
+                // increments the counter on field
+                composer.count.display.text(composedLength);
+
+                if(composedLength >= composer.warning()){
+                    composer.count.box.addClass('text-danger');
+                }else{
+                    composer.count.box.removeClass('text-danger');
+                }
+               
+           });
+        }
+    )();
+
+
+    (
+        function attachText() {
+            
+            $('#app-main').append('attacg');    
+        }
+    )();
+
 
 });
