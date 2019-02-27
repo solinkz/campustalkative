@@ -2,6 +2,7 @@ $(document).ready(function(){
 
     // limit news-card text
     $(".news-card-text").each(function (i) {
+        
         len = $(this).text().length;
         if (len > 300) {
             $(this).text($(this).text().substr(0, 300) + '...');
@@ -9,6 +10,10 @@ $(document).ready(function(){
         }
     });
 
+    $('.news-card .more').click(function (e) {
+        e.preventDefaul();
+        $(this).parent().prev().find('.news-card-text').toggleClass('news-card-text news-card-text--full');
+    })
     // toggle liked icon on click
 
     $(".like").on('click', function(){
@@ -59,12 +64,5 @@ $(document).ready(function(){
     )();
 
 
-    (
-        function attachText() {
-            
-            $('#app-main').append('attacg');    
-        }
-    )();
-
-
+  
 });

@@ -447,19 +447,15 @@ a:hover {
 
 #app-main-secondary main.content .container {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  max-width: 100%; }
   @media (min-width: 62em) {
     #app-main-secondary main.content .container {
       margin-right: auto;
       margin-left: auto;
       padding-right: 15px;
-      padding-left: 15px; } }
-
-#app-main-secondary main.content .main-content {
-  margin-top: 0; }
-  @media (min-width: 62em) {
-    #app-main-secondary main.content .main-content {
-      margin-top: 6rem; } }
+      padding-left: 15px;
+      max-width: 960px; } }
 
 #app-main-secondary main.content .news-card {
   border-radius: 0; }
@@ -574,14 +570,14 @@ a:hover {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #fff;
     padding: 1rem 2rem;
     z-index: 5; }
     @media (min-width: 62em) {
       .nav-sub {
         display: none; } }
     .nav-sub a {
-      color: #fff; }
+      color: #f6891f; }
   .nav-brand {
     height: 4rem; }
     @media (min-width: 62em) {

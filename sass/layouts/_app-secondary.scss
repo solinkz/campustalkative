@@ -16,22 +16,23 @@
         .container{
             margin: 0;
             padding: 0;
-
+            max-width: 100%;
             @include respond(desktop){
                 margin-right: auto;
                 margin-left: auto;
                 padding-right: 15px;
                 padding-left: 15px;
+                max-width: 960px
             }
         }
 
-        .main-content{
-            margin-top: 0;
+        // .main-content{
+        //     margin-top: 0;
 
-            @include respond(desktop){
-                margin-top: 6rem;
-            }
-        }
+        //     @include respond(desktop){
+        //         margin-top: 6rem;
+        //     }
+        // }
         
         .news-card{
             border-radius: 0;
