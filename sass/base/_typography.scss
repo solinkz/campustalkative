@@ -61,3 +61,23 @@ a{
     padding: 1rem 2rem;
     color: $color-secondary;
 }
+.page-title{
+    position: fixed;
+    top: .6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $color-primary;
+    background-color: $color-white;
+    padding: 1rem;
+    z-index: 10;
+    display: inline-block;
+    
+    @include respond(desktop){
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 2rem 3rem;
+        box-shadow: 0 0 .5rem rgba($color-black, .1);
+        z-index: 1;
+    }
+}

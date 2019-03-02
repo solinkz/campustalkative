@@ -25,14 +25,14 @@ $(document).ready(function(){
     (
         function composeCounter() {
             var composer = {
-                limit: 1500,
+                limit: 1000,
                 count: {
                     box : $('.compose-count'), 
                     display : $('.word-count')
                 },
                 warning: function () {
                     // 20% of the compose limit
-                    return (this.limit - ( (2 / 100) * this.limit) ) .toFixed(0);
+                    return (this.limit - ( (3 / 100) * this.limit) ) .toFixed(0);
                 },
                 area: $('#compose-area')
             }

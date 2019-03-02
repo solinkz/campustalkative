@@ -1,0 +1,99 @@
+#app-main{
+    position: relative;
+    min-height: 100vh;
+    background-color: $color-lighter-grey;
+    @include respond(desktop){
+        padding-top: 8rem;
+    }
+    
+    &-secondary{
+
+        background-color: $color-lighter-grey;
+        min-height: 100vh;
+        
+        @include respond(desktop){
+            padding-top: 8rem;
+        }
+        .nav{
+
+            &-brand{
+                opacity: 0;
+                // visibility: hidden;
+
+                @include respond(desktop){
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+
+        .main-content{
+            margin: 0;
+            padding: 6rem 0;
+
+            @include respond(desktop){
+                padding: 0;
+                padding-bottom: 6rem;
+            }
+        }
+       
+   }
+
+
+   &-tertiary{
+        background-color: $color-lighter-grey;
+        min-height: 100vh;
+    
+        .nav{
+    
+            &-main{
+                display: none;
+                @include respond(desktop){
+                    display: flex;
+                }
+            }
+        }
+    
+        main.content{
+    
+            .container{
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+                @include respond(desktop){
+                    margin-right: auto;
+                    margin-left: auto;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    max-width: 960px
+                }
+            }
+    
+            .main-content{
+                margin-top: 6rem;
+    
+                // @include respond(desktop){
+                //     margin-top: 6rem;
+                // }
+            }
+        
+            .news-card{
+                border-radius: 0;
+    
+                @include respond(desktop){
+                    border-radius: 8px;
+                }
+            }
+    
+            .comment-sec-field{
+                position: fixed;
+                @include respond(desktop){
+                    position: absolute;
+                }
+            }
+        }
+    
+    
+    }
+}

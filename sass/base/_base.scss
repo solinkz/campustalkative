@@ -23,15 +23,15 @@ body{
     box-sizing: border-box;
 }
 
-#app-main{
-    position: relative;
-    min-height: 100vh;
-    background-color: $color-lighter-grey;
-    @include respond(desktop){
-        padding-top: 8rem;
-    }
+// #app-main{
+//     position: relative;
+//     min-height: 100vh;
+//     background-color: $color-lighter-grey;
+//     @include respond(desktop){
+//         padding-top: 8rem;
+//     }
     
-}
+// }
 
 ::selection{
     background-color: lighten($color-primary, 40);

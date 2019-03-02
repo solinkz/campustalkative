@@ -25,14 +25,6 @@ html {
 body {
   box-sizing: border-box; }
 
-#app-main {
-  position: relative;
-  min-height: 100vh;
-  background-color: #f7f7f7; }
-  @media (min-width: 62em) {
-    #app-main {
-      padding-top: 8rem; } }
-
 ::selection {
   background-color: #fef0e3; }
 
@@ -83,6 +75,25 @@ a:hover {
   line-height: 1.2;
   padding: 1rem 2rem;
   color: #3D3D3D; }
+
+.page-title {
+  position: fixed;
+  top: .6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #f6891f;
+  background-color: #fff;
+  padding: 1rem;
+  z-index: 10;
+  display: inline-block; }
+  @media (min-width: 62em) {
+    .page-title {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 2rem 3rem;
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+      z-index: 1; } }
 
 .text-primary {
   color: #f6891f !important; }
@@ -217,6 +228,10 @@ a:hover {
   opacity: 0;
   visibility: hidden; }
 
+.compose input.compose-input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 2rem; }
+
 .compose textarea.compose-text-area {
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 2.2rem; }
@@ -333,6 +348,9 @@ a:hover {
 .btn-primary:hover {
   background-color: #f58110; }
 
+.btn-sm {
+  padding: .5rem 2rem; }
+
 .img-circle {
   clip-path: circle(50% at 50% 50%);
   text-align: center; }
@@ -439,35 +457,63 @@ a:hover {
     display: flex;
     align-items: center; }
 
-#app-main-secondary .nav-main {
-  display: none; }
+#app-main {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f7f7f7; }
   @media (min-width: 62em) {
-    #app-main-secondary .nav-main {
-      display: flex; } }
-
-#app-main-secondary main.content .container {
-  margin: 0;
-  padding: 0;
-  max-width: 100%; }
-  @media (min-width: 62em) {
-    #app-main-secondary main.content .container {
-      margin-right: auto;
-      margin-left: auto;
-      padding-right: 15px;
-      padding-left: 15px;
-      max-width: 960px; } }
-
-#app-main-secondary main.content .news-card {
-  border-radius: 0; }
-  @media (min-width: 62em) {
-    #app-main-secondary main.content .news-card {
-      border-radius: 8px; } }
-
-#app-main-secondary main.content .comment-sec-field {
-  position: fixed; }
-  @media (min-width: 62em) {
-    #app-main-secondary main.content .comment-sec-field {
-      position: absolute; } }
+    #app-main {
+      padding-top: 8rem; } }
+  #app-main-secondary {
+    background-color: #f7f7f7;
+    min-height: 100vh; }
+    @media (min-width: 62em) {
+      #app-main-secondary {
+        padding-top: 8rem; } }
+    #app-main-secondary .nav-brand {
+      opacity: 0; }
+      @media (min-width: 62em) {
+        #app-main-secondary .nav-brand {
+          opacity: 1;
+          visibility: visible; } }
+    #app-main-secondary .main-content {
+      margin: 0;
+      padding: 6rem 0; }
+      @media (min-width: 62em) {
+        #app-main-secondary .main-content {
+          padding: 0;
+          padding-bottom: 6rem; } }
+  #app-main-tertiary {
+    background-color: #f7f7f7;
+    min-height: 100vh; }
+    #app-main-tertiary .nav-main {
+      display: none; }
+      @media (min-width: 62em) {
+        #app-main-tertiary .nav-main {
+          display: flex; } }
+    #app-main-tertiary main.content .container {
+      margin: 0;
+      padding: 0;
+      max-width: 100%; }
+      @media (min-width: 62em) {
+        #app-main-tertiary main.content .container {
+          margin-right: auto;
+          margin-left: auto;
+          padding-right: 15px;
+          padding-left: 15px;
+          max-width: 960px; } }
+    #app-main-tertiary main.content .main-content {
+      margin-top: 6rem; }
+    #app-main-tertiary main.content .news-card {
+      border-radius: 0; }
+      @media (min-width: 62em) {
+        #app-main-tertiary main.content .news-card {
+          border-radius: 8px; } }
+    #app-main-tertiary main.content .comment-sec-field {
+      position: fixed; }
+      @media (min-width: 62em) {
+        #app-main-tertiary main.content .comment-sec-field {
+          position: absolute; } }
 
 .header {
   height: 70vh;
@@ -662,6 +708,91 @@ a:hover {
     @media (min-width: 48em) {
       .nav .material-icons {
         font-size: 2.5rem; } }
+
+.forum {
+  margin-top: 3rem;
+  position: relative; }
+  .forum-nav {
+    background-color: #fff;
+    padding: 0;
+    border-bottom: none !important; }
+  @media (min-width: 62em) {
+    .forum-nav-item {
+      margin-right: 0 !important;
+      display: block; } }
+  .forum-nav-item .nav-link {
+    padding: 1.5rem 1rem; }
+    .forum-nav-item .nav-link, .forum-nav-item .nav-link:hover {
+      border-radius: 0;
+      border: none; }
+  .forum-nav-item .nav-link.active {
+    border-radius: 0;
+    border-bottom: 3px solid #f6891f; }
+    @media (min-width: 62em) {
+      .forum-nav-item .nav-link.active {
+        border-bottom: none;
+        border-left: 3px solid #f6891f; } }
+    .forum-nav-item .nav-link.active:hover {
+      border-radius: 0; }
+  .forum-tab-content {
+    padding: 0;
+    margin-top: 2rem; }
+    @media (min-width: 62em) {
+      .forum-tab-content {
+        padding: 0 4rem;
+        padding-right: 0;
+        margin-top: 0; } }
+  .forum-card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
+  .forum-title {
+    font-size: 1.8rem;
+    color: #3D3D3D; }
+  .forum-member-count {
+    font-size: 1.4rem;
+    color: #f6891f; }
+  .forum-img {
+    max-height: 20rem;
+    overflow-y: hidden; }
+    @media (min-width: 48em) {
+      .forum-img {
+        max-height: 30rem; } }
+    .forum-img--thumb {
+      max-height: 10rem; }
+  .forum-display-img {
+    width: 100%; }
+  .forum-btn {
+    font-size: 1.4rem;
+    color: #fff !important; }
+  .forum-edit {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: ellipse(50% at 50% 50%);
+    position: absolute;
+    top: 4%;
+    right: 4%; }
+  .forum-info {
+    padding: 4rem 1rem;
+    position: relative; }
+  .forum-base-info {
+    position: absolute;
+    padding: 1rem;
+    top: -10rem;
+    left: 4rem;
+    background-color: #fff; }
+    @media (min-width: 48em) {
+      .forum-base-info {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 0; } }
+  .forum-description {
+    margin-top: 1rem; }
+    @media (min-width: 62em) {
+      .forum-description {
+        margin-top: 0; } }
 
 .main-content {
   display: flex;

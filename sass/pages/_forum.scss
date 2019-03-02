@@ -1,0 +1,138 @@
+.forum{
+    margin-top: 3rem;
+    position: relative;
+
+    // GENERAL FORUM STYLE
+    &-nav{
+        background-color: $color-white;
+        padding: 0;
+        border-bottom: none !important;
+    }
+
+    &-nav-item{
+
+        @include respond(desktop){
+            margin-right: 0 !important;
+            display: block;
+            
+        }
+
+        .nav-link{
+            padding:1.5rem 1rem;
+            &,
+            &:hover{
+                border-radius: 0;
+                border:none;
+            }
+
+        }
+        .nav-link.active{
+            
+            border-radius: 0;
+            border-bottom: 3px solid $color-primary;
+            @include respond(desktop){
+                border-bottom: none;
+                border-left: 3px solid $color-primary;
+            }
+            
+            &:hover{
+                border-radius: 0;
+               
+            }
+
+        }
+    }
+
+    &-tab-content{
+        padding: 0;
+        margin-top: 2rem;
+        @include respond(desktop){
+            padding: 0 4rem;
+            padding-right: 0; 
+            margin-top: 0;
+        }
+    }
+    &-card{
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)
+    }
+
+    &-title{
+        font-size: 1.8rem;
+        color: $color-secondary;
+    }
+    &-member-count{
+        font-size: 1.4rem;
+        color: $color-primary;
+    }
+
+    &-img{
+        max-height: 20rem;
+        overflow-y: hidden;
+        
+        @include respond(tab){
+            
+            max-height: 30rem;
+        }
+        &--thumb{
+            max-height: 10rem;
+        }
+    }
+
+    &-display-img{
+        width: 100%;    
+    }
+
+    &-btn{
+        font-size: 1.4rem;
+        color: $color-white !important;
+    }
+
+    // FORUM VIEW STYLE
+
+    &-edit{
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        clip-path: ellipse(50% at 50% 50%);
+        position: absolute;
+        top: 4%;
+        right: 4%;
+    }
+
+
+    &-info{
+
+        padding: 4rem 1rem;
+        position: relative;
+
+        @include respond(desktop){
+
+        }
+    }
+
+    &-base-info{
+
+        position: absolute;
+        padding: 1rem;
+        top: -10rem;
+        left: 4rem;
+        background-color: $color-white;
+
+        @include respond(tab){
+            position: relative;
+            top: 0;
+            left: 0;
+            padding: 0;
+        }
+    }
+    &-description{
+        margin-top: 1rem;
+        @include respond(desktop){
+            margin-top: 0;
+        }
+    }
+
+
+}

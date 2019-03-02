@@ -44,6 +44,10 @@
         opacity: 0;
         visibility: hidden;
     }
+    input.compose-input{
+        border: 1px solid rgba($color-black, .1);
+        font-size: 2rem ;
+    }
     textarea.compose-text-area{
         border: 1px solid rgba($color-black, .1);
         font-size: 2.2rem ;
