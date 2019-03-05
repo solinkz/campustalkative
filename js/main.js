@@ -82,27 +82,32 @@ $(document).ready(function(){
     });
 
     search.close.click(function(){
-        search.form.css('display','none');
-        search.container.fadeOut();
+        search.form.css('display','none'),
+        search.container.fadeOut(),
         search.formEl.val(null);
-        clearInterval(search.queryCheck);
+
+        // clearInterval(search.queryCheck);
         
     });
 
     search.formEl.click(function(){
+
         search.container.fadeIn();
 
-        search.queryCheck = setInterval(function(){
+        // search.queryCheck = setInterval(function(){
 
-            let val = search.formEl.val();
-            search.query.text(val);
-            console.log(val);
-            
+        //     let val = search.formEl.val();
+        //     search.query.text(val);
+        //     // console.log(val);
            
-        }, 200);
+        // }, 200);
+
     });
 
-
+    search.formEl.on('keyup touchend', function () {
+        let val = search.formEl.val();
+        search.query.text(val);
+    })
 
   
 });
