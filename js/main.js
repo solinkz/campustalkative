@@ -71,6 +71,7 @@ $(document).ready(function(){
         toggle  : $('.search-toggle'),
         close   : $('.search-close'),
         form    : $('.nav-search'),
+        formEl    : $('.nav-search-form'),
         container: $('#search')
     }
 
@@ -83,7 +84,7 @@ $(document).ready(function(){
         search.container.fadeOut();
     });
 
-    search.form.keypress(function(){
+    search.formEl.click(function(){
         search.container.fadeIn();
     });
 
