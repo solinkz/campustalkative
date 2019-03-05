@@ -19,7 +19,23 @@
 
 </head>
     <div id="app-main-secondary">
+
+        <div id="search" class="search">
+            <div class="row justify-content-center">
+                <div class="col-md-7 sm-8">
+                    <div class="search-query">
+                        
+                    </div>
+                    <div class="search-result">
+        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
        <nav class="nav nav-bar">
+
             <div class="container nav-container">
 
                 <!-- NAV TOP FOR MOBILE -->
@@ -29,11 +45,13 @@
                     </a>
                      <ul class="nav-menu nav-menu--top">
                          <li class="nav-item">
-                             <a href="#">
+                            <a href="#" class="search-toggle">
                                 <i class="material-icons">
                                     search
                                 </i>
                             </a>
+
+                           
                            
                          </li>
                          <li class="nav-item">
@@ -69,7 +87,13 @@
                 </div>
 
             </div>
+
+            <form action="" method="post" class="nav-search">
+                <input type="text" name="search" id="search" class="nav-search-form " placeholder="Search...">
+                <span class="search-close"><i class="material-icons">close</i></span>
+            </form>
        </nav>
+
 
        <main class="content">
             <div class="container">

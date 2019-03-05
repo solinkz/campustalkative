@@ -64,5 +64,28 @@ $(document).ready(function(){
     )();
 
 
+
+    // SEARCH FUNCTIONALITIES
+
+    var search = {
+        toggle  : $('.search-toggle'),
+        close   : $('.search-close'),
+        form    : $('.nav-search'),
+        container: $('#search')
+    }
+
+    search.toggle.click(function(){
+        search.form.css('display','flex');
+    });
+
+    search.close.click(function(){
+        search.form.css('display','none');
+        search.container.fadeOut();
+    });
+
+    search.form.keypress(function(){
+        search.container.fadeIn();
+    });
+
   
 });

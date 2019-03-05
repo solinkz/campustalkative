@@ -491,6 +491,16 @@ a:hover {
     display: flex;
     align-items: center; }
 
+.search {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); }
+
 #app-main {
   position: relative;
   min-height: 100vh;
@@ -637,7 +647,8 @@ a:hover {
     margin-top: 1rem; }
 
 .nav {
-  display: flex; }
+  display: flex;
+  position: relative; }
   .nav-auth {
     padding: 2rem; }
     @media (min-width: 62em) {
@@ -742,6 +753,23 @@ a:hover {
     @media (min-width: 48em) {
       .nav .material-icons {
         font-size: 2.5rem; } }
+  .nav-search {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background-color: #fff;
+    width: 100%;
+    height: 6rem;
+    padding: 1rem 4rem; }
+    .nav-search-form {
+      width: 100%;
+      border: none; }
+      .nav-search-form:focus {
+        outline: none; }
+    .nav-search .search-close {
+      cursor: pointer; }
 
 .forum {
   margin-top: 3rem;
