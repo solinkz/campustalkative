@@ -106,7 +106,7 @@ $(document).ready(function(){
 
     search.formEl.on('keyup touchend', function () {
         let val = search.formEl.val();
-        search.query.text(val);
+        search.query.text(val + "o");
     })
 
   
