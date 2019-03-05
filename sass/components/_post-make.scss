@@ -3,6 +3,8 @@
     background-color: $color-white;
     border-radius: 8px;
     margin-bottom: 1rem;
+    border: 1px solid rgba($color-black, .1); 
+
 
     &--mock{
         cursor: pointer;
@@ -10,11 +12,11 @@
 
     &-header{
         padding: 1rem 2rem;
-        border-bottom:1px solid rgba($color-black, .1); 
+        // border-bottom:1px solid rgba($color-black, .1); 
     }
     &-body{
         padding: 2rem;
-        border-bottom:1px solid rgba($color-black, .1); 
+        // border-bottom:1px solid rgba($color-black, .1); 
     }
 
     &-footer{

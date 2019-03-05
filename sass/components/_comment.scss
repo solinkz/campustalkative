@@ -27,9 +27,11 @@
 
     &-text{
         width: 90%;
+        height: 5rem;
         border: none;
-        padding: 0 2rem;
+        padding: 1rem 2rem;
         resize: none;
+
         &:focus{
             border: none;
             outline: none;
@@ -44,5 +46,37 @@
         &:foucs{
             outline: none;
         }
+    }
+
+    &-more{
+        // box-shadow: 0 0 .5rem rgba($color-black, .1);
+        padding: 1rem 2rem;
+        margin: 1rem -2rem;
+        text-align: center;
+        position: relative;
+        height: 4rem;
+
+        .line{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% ,-50%);
+            z-index: 1;
+        }
+    }
+
+    &-extra{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: $color-white;
+        transform: translate(-50% ,-50%);
+        display: inline-block;
+        padding: 1rem 3rem;
+        border-radius: 10rem;
+        box-shadow: 0 0 .5rem rgba($color-black, .2);
+        cursor: pointer;
+        color: $color-primary;
+        z-index: 2;
     }
 }

@@ -98,6 +98,15 @@ a:hover {
 .text-primary {
   color: #f6891f !important; }
 
+.line {
+  height: 1px;
+  width: 100%;
+  display: inline-block; }
+  .line-primary {
+    background-color: #f6891f; }
+  .line-secondary {
+    background-color: #3D3D3D; }
+
 .auth {
   width: 100%;
   background: #fff; }
@@ -177,8 +186,9 @@ a:hover {
     justify-content: space-around; }
   .comment-sec-text {
     width: 90%;
+    height: 5rem;
     border: none;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     resize: none; }
     .comment-sec-text:focus {
       border: none;
@@ -189,6 +199,31 @@ a:hover {
     cursor: pointer; }
     .comment-sec-send:foucs {
       outline: none; }
+  .comment-sec-more {
+    padding: 1rem 2rem;
+    margin: 1rem -2rem;
+    text-align: center;
+    position: relative;
+    height: 4rem; }
+    .comment-sec-more .line {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1; }
+  .comment-sec-extra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 10rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: #f6891f;
+    z-index: 2; }
 
 .compose-toggle {
   width: 7rem;
@@ -355,11 +390,11 @@ a:hover {
   clip-path: circle(50% at 50% 50%);
   text-align: center; }
   .img-circle--lg {
-    width: 5rem;
-    height: 5rem; }
-  .img-circle--sm {
     width: 4rem;
     height: 4rem; }
+  .img-circle--sm {
+    width: 3rem;
+    height: 3rem; }
 
 .img-avatar {
   height: 100%; }
@@ -439,15 +474,14 @@ a:hover {
 .post-make {
   background-color: #fff;
   border-radius: 8px;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
   .post-make--mock {
     cursor: pointer; }
   .post-make-header {
-    padding: 1rem 2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    padding: 1rem 2rem; }
   .post-make-body {
-    padding: 2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    padding: 2rem; }
   .post-make-footer {
     display: flex;
     padding: 1rem 2rem;
@@ -481,7 +515,7 @@ a:hover {
       padding: 6rem 0; }
       @media (min-width: 62em) {
         #app-main-secondary .main-content {
-          padding: 0;
+          padding: 0 1.5rem;
           padding-bottom: 6rem; } }
   #app-main-tertiary {
     background-color: #f7f7f7;
@@ -776,6 +810,9 @@ a:hover {
   .forum-info {
     padding: 4rem 1rem;
     position: relative; }
+    @media (min-width: 62em) {
+      .forum-info {
+        padding: 4rem 3rem; } }
   .forum-base-info {
     position: absolute;
     padding: 1rem;
@@ -789,10 +826,21 @@ a:hover {
         left: 0;
         padding: 0; } }
   .forum-description {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 1rem; }
     @media (min-width: 62em) {
       .forum-description {
         margin-top: 0; } }
+  .forum-description .forum-title {
+    cursor: pointer; }
+  .forum-post {
+    padding: 3rem 1rem; }
+    @media (min-width: 62em) {
+      .forum-post {
+        padding: 3rem; } }
 
 .main-content {
   display: flex;

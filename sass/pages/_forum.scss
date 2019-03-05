@@ -53,7 +53,7 @@
         }
     }
     &-card{
-        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
     }
 
     &-title{
@@ -108,7 +108,7 @@
         position: relative;
 
         @include respond(desktop){
-
+            padding: 4rem 3rem;
         }
     }
 
@@ -129,10 +129,29 @@
     }
     &-description{
         margin-top: 1rem;
+        border-radius: 8px;
+        border: 1px solid rgba($color-black, .1);
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+        padding: 1rem;
         @include respond(desktop){
             margin-top: 0;
         }
+        
+        
+        
     }
+    
+    &-description &-title {
+        cursor: pointer;
+    }
+    
+    &-post{
+        padding: 3rem 1rem;
+        
+        @include respond(desktop){
+            padding: 3rem;
+        }
 
+    }
 
 }
