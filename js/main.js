@@ -71,8 +71,10 @@ $(document).ready(function(){
         toggle  : $('.search-toggle'),
         close   : $('.search-close'),
         form    : $('.nav-search'),
-        formEl    : $('.nav-search-form'),
-        container: $('#search')
+        formEl  : $('.nav-search-form'),
+        container : $('#search'),
+        query   : $('.search-query-val')
+        
     }
 
     search.toggle.click(function(){
@@ -82,11 +84,25 @@ $(document).ready(function(){
     search.close.click(function(){
         search.form.css('display','none');
         search.container.fadeOut();
+        search.formEl.val(null);
+        clearInterval(search.queryCheck);
+        
     });
 
     search.formEl.click(function(){
         search.container.fadeIn();
+
+        search.queryCheck = setInterval(function(){
+
+            let val = search.formEl.val();
+            search.query.text(val);
+            console.log(val);
+            
+           
+        }, 200);
     });
+
+
 
   
 });

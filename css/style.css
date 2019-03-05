@@ -496,10 +496,16 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 4;
+  padding: 7rem 1rem;
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8); }
+  .search-query {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    font-size: 1.6rem; }
 
 #app-main {
   position: relative;
@@ -765,7 +771,8 @@ a:hover {
     padding: 1rem 4rem; }
     .nav-search-form {
       width: 100%;
-      border: none; }
+      border: none;
+      font-size: 2.5rem; }
       .nav-search-form:focus {
         outline: none; }
     .nav-search .search-close {
