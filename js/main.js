@@ -81,11 +81,13 @@ $(document).ready(function(){
         search.form.css('display','flex');
     });
 
+
+    // click close
     search.close.click(function(){
         search.form.css('display','none'),
         search.container.fadeOut(),
-        search.formEl.val(null);
-
+        search.formEl.val(null),
+        search.query.text('');
         // clearInterval(search.queryCheck);
         
     });
@@ -94,19 +96,11 @@ $(document).ready(function(){
 
         search.container.fadeIn();
 
-        // search.queryCheck = setInterval(function(){
-
-        //     let val = search.formEl.val();
-        //     search.query.text(val);
-        //     // console.log(val);
-           
-        // }, 200);
-
     });
 
     search.formEl.on('keyup touchend', function () {
         let val = search.formEl.val();
-        search.query.text(val + "o");
+        search.query.text(val);
     })
 
   

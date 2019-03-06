@@ -14,3 +14,15 @@
         background-color: $color-secondary;
     }
 }
+
+.media-body--spaced{
+    padding: 0 1.2rem;
+}
+
+.hashtag{
+    font-weight: 700;
+
+    &::before{
+        content: '#';
+    }
+}

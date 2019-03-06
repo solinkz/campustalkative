@@ -16,4 +16,19 @@
         font-size: $default-font-size;
     }
 
+    &-result{
+        background-color: $color-white;
+        border-radius: 8px;
+        padding: 3rem 2rem;
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        min-height: 70vh;
+    }
+
+    &-item{
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }
+
 }

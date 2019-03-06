@@ -107,6 +107,14 @@ a:hover {
   .line-secondary {
     background-color: #3D3D3D; }
 
+.media-body--spaced {
+  padding: 0 1.2rem; }
+
+.hashtag {
+  font-weight: 700; }
+  .hashtag::before {
+    content: '#'; }
+
 .auth {
   width: 100%;
   background: #fff; }
@@ -506,6 +514,15 @@ a:hover {
     border-radius: 8px;
     padding: 2rem;
     font-size: 1.6rem; }
+  .search-result {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 3rem 2rem;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    min-height: 70vh; }
+  .search-item:not(:last-child) {
+    margin-bottom: 1rem; }
 
 #app-main {
   position: relative;

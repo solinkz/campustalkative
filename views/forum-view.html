@@ -20,14 +20,48 @@
 </head>
     <div id="app-main-secondary">
 
+        <!-- SEARCH RESULT FIELD -->
         <div id="search" class="search">
             <div class="row justify-content-center">
-                <div class="col-md-7 sm-8">
+                <div class="col-md-5 col-sm-8">
                     <div class="search-query">
                         search result for: <span class="search-query-val"></span>
                     </div>
                     <div class="search-result">
-        
+                        <ul class="search-list nav flex-column">
+                            <li class="search-item nav-item">
+                                <a href="#" class="search-link">
+                                    <div class="media iua">
+                                        <div class="img-circle img-circle--lg">
+                                            <img src="../img/a1.jpg" alt="avatar1" id="result-1" class="img-avatar">
+                                        </div>
+                                        <div class="media-body media-body--spaced">
+                                            Andrew Von
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </li>
+                            <li class="search-item nav-item">
+                                <a href="#" class="search-link">
+                                    <div class="media iua">
+                                        <div class="img-circle img-circle--lg">
+                                            <img src="../img/a3.jpg" alt="avatar 2" id="result-2" class="img-avatar">
+                                        </div>
+                                        <div class="media-body media-body--spaced">
+                                            Jessica Doe
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+
+                            <li class="search-list">
+                                <a href="#" class="search-link">
+                                    <span class="hashtag">Campustalkative</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
@@ -88,6 +122,7 @@
 
             </div>
 
+            <!-- SEARCH FORM -->
             <form action="" method="post" class="nav-search">
                 <input type="text" name="search" id="search" class="nav-search-form " placeholder="Search...">
                 <span class="search-close"><i class="material-icons">close</i></span>
