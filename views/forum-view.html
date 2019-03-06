@@ -133,10 +133,22 @@
        <main class="content">
             <div class="container">
                 <section class="main-content d-block">
+    
                     <h1 class="page-title">FUTMx Dev Circle</h1>
                     
                     <div class="forum bg-white shadow-sm">
-                        <button class="btn btn-light forum-edit"><i class="material-icons">settings</i></button>
+
+                        <div class=" dropdown forum-edit">
+
+                            <button class="btn btn-light forum-edit-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">settings</i>
+                            </button>
+                            <div class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#editForumModal">edit forum</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#disableForumModal">Disable forum</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#genMsgModal">drop general message</a>
+                            </div>
+                        </div>
                         <div class="forum-img">
                             <img src="../img/dev.jpg" alt="dev" class="forum-display-img">
                         </div>
@@ -441,6 +453,106 @@
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="genMsgModal" tabindex="-1" role="dialog" aria-labelledby="composeModallabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="heading-secondary" id="composeModallabel">General message post</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i class="material-icons">close</i></span>
+                            </button>
+                        </div>
+                        <form action="" method="POST" class="compose-form">
+                            <div class="modal-body">
+                                <div class="media">
+                                    <img src="../img/a3.jpg" alt="avatar" class="img-circle img-circle--lg">
+                                    <div class="media-body ml-3">
+                                        <div class="compose-field">
+                                            <textarea name="compose-area" id="compose-area" rows="6"
+                                                class="compose-text-area form-control"
+                                                placeholder="What message do you want pass through?"></textarea>
+                                        </div>
+                                        <div class="text-right p-3 font-weight-bold compose-count">
+                                            <span class="word-count">0</span>/<span class="word-length">2000</span>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                            <div class="modal-footer">
+                                <input type="file" name="upload" id="upload" class="compose-upload">
+                                <label for="upload" class="btn btn-secondary compose-btn">upload</label>
+            
+                                <button type="button" class="btn btn-primary compose-btn ">post</button>
+                            </div>
+            
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="editForumModal" tabindex="-1" role="dialog" aria-labelledby="composeModallabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="heading-secondary" id="composeModallabel">Add a new Community</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i class="material-icons">close</i></span>
+                            </button>
+                        </div>
+                        <form action="" method="POST" class="compose-form">
+                            <div class="modal-body">
+                                <div class="media">
+                                    <img src="../img/a3.jpg" alt="avatar" class="img-circle img-circle--lg">
+                                    <div class="media-body ml-3">
+                                        <div class="compose-field">
+                                            <div class="form-group">
+            
+                                                <input type="text" name="" id="" class="compose-input form-control"
+                                                    placeholder="give this community a name!" value="FUTMx Dev. Circle">
+                                            </div>
+                                            <textarea name="compose-area" id="compose-area" rows="3"
+                                                class="compose-text-area form-control"
+                                                placeholder="Describe this community! " ></textarea>
+                                        </div>
+                                        <div class="form-group py-4">
+                                            <input type="file" name="upload" id="upload" class="compose-upload">
+                                            <label for="upload" class="btn btn-secondary compose-btn">upload display image</label>
+                                        </div>
+                                        <!-- <div class="text-right p-3 font-weight-bold compose-count">
+                                                        <span class="word-count">0</span>/<span class="word-length">2000</span>
+                                                    </div> -->
+                                    </div>
+                                </div>
+            
+                            </div>
+                            <div class="modal-footer">
+            
+                                <button type="button" class="btn btn-primary compose-btn ">Create</button>
+                            </div>
+            
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="disableForumModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        
+                        <div class="modal-body">
+                           <h2 class="heading-secondary">Are you sure you want to disbale this forum?</h2>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-danger btn-lg">Disable</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
        </div>
 
@@ -448,8 +560,8 @@
     </div>
 <body>
 <script src="../js/jquery-3.3.1.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
 <script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script src="../js/main.js"></script>
 </body>
 

@@ -115,6 +115,10 @@ a:hover {
   .hashtag::before {
     content: '#'; }
 
+.dropleft .dropdown-toggle::before,
+.dropdown-toggle::after {
+  display: none; }
+
 .auth {
   width: 100%;
   background: #fff; }
@@ -850,15 +854,25 @@ a:hover {
     font-size: 1.4rem;
     color: #fff !important; }
   .forum-edit {
-    width: 5rem;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    clip-path: ellipse(50% at 50% 50%);
     position: absolute;
-    top: 4%;
+    top: 2%;
     right: 4%; }
+    .forum-edit-btn {
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      clip-path: ellipse(50% at 50% 50%); }
+    .forum-edit .dropdown-menu {
+      padding: 2rem 0;
+      top: 1rem !important;
+      left: -120% !important;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: .8rem; }
+    .forum-edit .dropdown-item {
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
   .forum-info {
     padding: 4rem 1rem;
     position: relative; }
