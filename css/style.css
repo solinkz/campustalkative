@@ -989,21 +989,34 @@ a:hover {
   width: 100%; }
   .profile-info {
     background-color: #fff;
-    height: 70vh;
+    min-height: 70vh;
     width: 100%;
-    padding: 2rem;
+    padding: 2rem; }
+  .profile-category {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    .profile-category:not(:last-child) {
+      margin-bottom: 1rem; }
+  .profile-activity {
     display: flex;
     justify-content: center; }
+    .profile-activity-item:not(:last-child) {
+      margin-right: 2rem; }
   .profile-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 22rem;
     height: 22rem;
     clip-path: circle(50% at 50% 50%);
     background-image: radial-gradient(rgba(246, 137, 31, 0.4) 0%, rgba(246, 137, 31, 0.4) 62%, rgba(246, 137, 31, 0.2) 62%);
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    margin-bottom: 2rem; }
     @media (min-width: 48em) {
       .profile-img {
         width: 18rem;
         height: 18rem;
         background-image: radial-gradient(rgba(246, 137, 31, 0.3) 0%, rgba(246, 137, 31, 0.3) 60%, rgba(246, 137, 31, 0.1) 60%); } }
+  .profile-name {
+    font-weight: 700; }

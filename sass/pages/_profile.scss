@@ -4,19 +4,40 @@
     // INFO SIDE
     &-info{
         background-color: $color-white;
-        height: 70vh;
+        min-height: 70vh;
         width: 100%;
         padding: 2rem;
+    }
+    
+    &-category{
         display: flex;
         justify-content: center;
+        flex-direction: column; 
+        align-items: center;
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
     }
+    &-activity{
+        @include justifyCenter;
 
+        &-item{
+            
+            &:not(:last-child){
+              margin-right: 2rem;
+            }
+         
+            
+        }
+    }
     &-img{
+        @include justifyAlignCenter;
         width: 22rem;
         height: 22rem;
         clip-path: circle(50% at 50% 50%);
         background-image: radial-gradient(rgba($color-primary, .4) 0%, rgba($color-primary, .4) 62%, rgba($color-primary, .2) 62%);
-        @include justifyAlignCenter;
+        margin-bottom: 2rem;
+
 
         @include respond(tab){
             width: 18rem;
@@ -24,6 +45,11 @@
             background-image: radial-gradient(rgba($color-primary, .3) 0%, rgba($color-primary, .3) 60%, rgba($color-primary, .1) 60%);
 
         }
+    }
+
+
+    &-name{
+        font-weight: 700;
     }
 
     // POST SIDE
