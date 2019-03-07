@@ -15,11 +15,13 @@
         flex-direction: column; 
         align-items: center;
         &:not(:last-child){
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
     }
     &-activity{
         @include justifyCenter;
+        color: $color-primary;
+        font-weight: 700;
 
         &-item{
             
@@ -50,7 +52,21 @@
 
     &-name{
         font-weight: 700;
+        font-size: 2rem;
+        color: $color-black;
     }
+
+    &-edu{
+        font-size: 1.4rem;
+        color: $color-black;
+
+    }
+
+    &-description{
+        font-size: 1.4rem;
+    }
+   
+
 
     // POST SIDE
     &-post{

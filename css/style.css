@@ -998,10 +998,12 @@ a:hover {
     flex-direction: column;
     align-items: center; }
     .profile-category:not(:last-child) {
-      margin-bottom: 1rem; }
+      margin-bottom: 1.5rem; }
   .profile-activity {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    color: #f6891f;
+    font-weight: 700; }
     .profile-activity-item:not(:last-child) {
       margin-right: 2rem; }
   .profile-img {
@@ -1019,4 +1021,11 @@ a:hover {
         height: 18rem;
         background-image: radial-gradient(rgba(246, 137, 31, 0.3) 0%, rgba(246, 137, 31, 0.3) 60%, rgba(246, 137, 31, 0.1) 60%); } }
   .profile-name {
-    font-weight: 700; }
+    font-weight: 700;
+    font-size: 2rem;
+    color: #000; }
+  .profile-edu {
+    font-size: 1.4rem;
+    color: #000; }
+  .profile-description {
+    font-size: 1.4rem; }
