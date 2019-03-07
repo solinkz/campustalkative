@@ -1029,3 +1029,8 @@ a:hover {
     color: #000; }
   .profile-description {
     font-size: 1.4rem; }
+  .profile-post {
+    background-color: #fff;
+    min-height: 70vh;
+    width: 100%;
+    padding: 2rem; }

@@ -70,7 +70,10 @@
 
     // POST SIDE
     &-post{
-
+        background-color: $color-white;
+        min-height: 70vh;
+        width: 100%;
+        padding: 2rem;
     }
 
 }
