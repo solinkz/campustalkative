@@ -32,3 +32,13 @@
     display: none;
    
 }
+
+.mobile-view-only{
+
+    display: block;
+
+    @include respond(desktop){
+        display: none;
+    }
+
+}

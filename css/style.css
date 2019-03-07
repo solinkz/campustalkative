@@ -119,6 +119,12 @@ a:hover {
 .dropdown-toggle::after {
   display: none; }
 
+.mobile-view-only {
+  display: block; }
+  @media (min-width: 62em) {
+    .mobile-view-only {
+      display: none; } }
+
 .auth {
   width: 100%;
   background: #fff; }
@@ -405,8 +411,15 @@ a:hover {
     width: 4rem;
     height: 4rem; }
   .img-circle--sm {
-    width: 3rem;
-    height: 3rem; }
+    width: 3.8rem;
+    height: 3.8rem; }
+  .img-circle--profile {
+    width: 16rem;
+    height: 16rem; }
+    @media (min-width: 48em) {
+      .img-circle--profile {
+        width: 14rem;
+        height: 14rem; } }
 
 .img-avatar {
   height: 100%; }
@@ -971,3 +984,26 @@ a:hover {
       height: 100vh;
       background-image: linear-gradient(to bottom, #f6891f 0%, #f6891f 50%, #fff 50%);
       padding-bottom: 3rem; } }
+
+.profile {
+  width: 100%; }
+  .profile-info {
+    background-color: #fff;
+    height: 70vh;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center; }
+  .profile-img {
+    width: 20rem;
+    height: 20rem;
+    clip-path: circle(50% at 50% 50%);
+    background-image: radial-gradient(rgba(246, 137, 31, 0.4) 0%, rgba(246, 137, 31, 0.4) 62%, rgba(246, 137, 31, 0.2) 62%);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 48em) {
+      .profile-img {
+        width: 18rem;
+        height: 18rem;
+        background-image: radial-gradient(rgba(246, 137, 31, 0.3) 0%, rgba(246, 137, 31, 0.3) 60%, rgba(246, 137, 31, 0.1) 60%); } }

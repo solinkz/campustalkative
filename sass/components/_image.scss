@@ -10,8 +10,18 @@
             height: 4rem;
         }
         &--sm{
-            width: 3rem;
-            height: 3rem;
+            width: 3.8rem;
+            height: 3.8rem;
+        }
+        &--profile{
+            width: 16rem;
+            height: 16rem;
+            
+            @include respond(tab){
+                
+                width: 14rem;
+                height: 14rem;
+            }
         }
     }
 
