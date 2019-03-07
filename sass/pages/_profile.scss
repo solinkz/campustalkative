@@ -12,8 +12,8 @@
     }
 
     &-img{
-        width: 20rem;
-        height: 20rem;
+        width: 22rem;
+        height: 22rem;
         clip-path: circle(50% at 50% 50%);
         background-image: radial-gradient(rgba($color-primary, .4) 0%, rgba($color-primary, .4) 62%, rgba($color-primary, .2) 62%);
         @include justifyAlignCenter;
