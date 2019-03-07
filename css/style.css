@@ -32,7 +32,7 @@ body {
   font-family: 'roboto', sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  color: #777;
+  color: #3f3f3f;
   font-size: 1.6rem; }
 
 a, a:link, a:visited, a:active {
@@ -54,7 +54,7 @@ a:hover {
     .heading-primary {
       font-size: 4rem; } }
   .heading-primary--auth {
-    color: #3D3D3D;
+    color: #303030;
     text-align: center; }
     @media (min-width: 62em) {
       .heading-primary--auth {
@@ -66,7 +66,7 @@ a:hover {
   text-transform: uppercase;
   line-height: 1.2;
   padding: 1rem 2rem;
-  color: #3D3D3D; }
+  color: #303030; }
 
 .heading-tertiary {
   font-size: 1.8rem;
@@ -74,7 +74,7 @@ a:hover {
   text-transform: uppercase;
   line-height: 1.2;
   padding: 1rem 2rem;
-  color: #3D3D3D; }
+  color: #303030; }
 
 .page-title {
   position: fixed;
@@ -105,7 +105,7 @@ a:hover {
   .line-primary {
     background-color: #f6891f; }
   .line-secondary {
-    background-color: #3D3D3D; }
+    background-color: #303030; }
 
 .media-body--spaced {
   padding: 0 1.2rem; }
@@ -155,7 +155,7 @@ a:hover {
     margin: 3rem 0; }
     .auth-forgot-password, .auth-forgot-password:link, .auth-forgot-password:visited, .auth-forgot-password:active {
       font-size: 2.2rem;
-      color: #3D3D3D; }
+      color: #303030; }
       @media (min-width: 48em) {
         .auth-forgot-password, .auth-forgot-password:link, .auth-forgot-password:visited, .auth-forgot-password:active {
           font-size: 1.6rem; } }
@@ -164,7 +164,7 @@ a:hover {
     font-size: 2.2rem;
     padding: 0 3rem;
     font-weight: 400;
-    color: #3D3D3D; }
+    color: #303030; }
     @media (min-width: 48em) {
       .auth-type {
         font-size: 1.6rem; } }
@@ -319,7 +319,7 @@ a:hover {
   padding: 2rem;
   font-size: 1.6rem; }
   .form-control {
-    color: #3D3D3D;
+    color: #303030;
     padding: .5rem 2rem;
     height: auto;
     font-size: 1.6rem;
@@ -330,7 +330,7 @@ a:hover {
       border-color: #f6891f;
       box-shadow: none; }
     .form-control::-webkit-input-placeholder {
-      color: #3D3D3D; }
+      color: #303030; }
   .form-control.form-control--auth {
     color: #000;
     border: none;
@@ -432,7 +432,7 @@ a:hover {
     justify-content: space-between; }
   .iua a.iua-link {
     font-size: 2rem;
-    color: #3D3D3D;
+    color: #303030;
     margin: 0;
     display: block; }
   .iua-misc {
@@ -461,7 +461,7 @@ a:hover {
   .news-card-text {
     padding: 2rem;
     font-size: 1.6rem;
-    color: #3D3D3D; }
+    color: #303030; }
   .news-card-footer {
     padding: 1rem 2rem;
     display: flex;
@@ -681,7 +681,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-around; }
     .footer-list a {
-      color: #777; }
+      color: #3f3f3f; }
   .footer-copyright {
     text-align: center;
     margin-top: 1rem; }
@@ -776,7 +776,7 @@ a:hover {
       margin-right: 2rem; }
     .nav-item a {
       font-size: 2rem;
-      color: #777;
+      color: #3f3f3f;
       transition: all .3s; }
       @media (min-width: 62em) {
         .nav-item a .material-icons:hover {
@@ -849,7 +849,7 @@ a:hover {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
   .forum-title {
     font-size: 1.8rem;
-    color: #3D3D3D; }
+    color: #303030; }
   .forum-member-count {
     font-size: 1.4rem;
     color: #f6891f; }
@@ -1028,9 +1028,17 @@ a:hover {
     font-size: 1.4rem;
     color: #000; }
   .profile-description {
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    position: relative;
+    margin: .5rem 0; }
   .profile-post {
     background-color: #fff;
-    min-height: 70vh;
     width: 100%;
-    padding: 2rem; }
+    min-height: auto;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2); }
+    @media (min-width: 62em) {
+      .profile-post {
+        padding: 2rem;
+        min-height: 70vh;
+        border-top: none; } }

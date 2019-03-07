@@ -64,6 +64,9 @@
 
     &-description{
         font-size: 1.4rem;
+        position: relative;
+        margin: .5rem 0;
+
     }
    
 
@@ -71,9 +74,17 @@
     // POST SIDE
     &-post{
         background-color: $color-white;
-        min-height: 70vh;
         width: 100%;
-        padding: 2rem;
+        min-height: auto;
+        padding: 2rem 0;
+
+        border-top: 1px solid rgba($color-black, .2);
+        
+        @include respond(desktop){    
+            padding: 2rem;
+            min-height: 70vh;
+            border-top: none;
+        }
     }
 
 }
