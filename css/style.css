@@ -986,7 +986,8 @@ a:hover {
       padding-bottom: 3rem; } }
 
 .profile {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .profile-info {
     background-color: #fff;
     min-height: 70vh;
@@ -1031,6 +1032,16 @@ a:hover {
     font-size: 1.4rem;
     position: relative;
     margin: .5rem 0; }
+  .profile-setting-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: #fff; }
+    .profile-setting-toggle .material-icons {
+      font-size: 3rem; }
   .profile-post {
     background-color: #fff;
     width: 100%;

@@ -11,7 +11,7 @@ $(document).ready(function(){
     });
 
     $('.news-card .more').click(function (e) {
-        e.preventDefaul();
+        e.preventDefault();
         $(this).parent().prev().find('.news-card-text').toggleClass('news-card-text news-card-text--full');
     })
     // toggle liked icon on click
