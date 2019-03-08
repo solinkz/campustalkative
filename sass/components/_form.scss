@@ -2,6 +2,23 @@
     padding: 2rem;
     font-size: 1.6rem;
 
+
+    &-category{
+     
+        padding: 2rem 0;
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba($color-black, .15);
+        }
+
+        &-title{
+            color: $color-black;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+    }
+
     &-control{
         color: $color-secondary;
         padding: .5rem 2rem;
@@ -76,5 +93,58 @@
         @include respond(tab){
             font-size: 1.6rem;
         }
+    }
+
+     &-radio--group{
+        width: 49%;
+        display: inline-block;
+
+        @include respond(tab-port){
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &-radio--input{
+        display: none;
+    }
+    &-radio--label{
+        font-size: $default-font-size;
+        cursor: pointer;
+        position: relative;
+        color: $color-darker-grey;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &-radio--button{
+        width: 3rem;
+        height: 3rem;
+        margin-right: .5rem;
+        border: 5px solid $color-primary; 
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        // left: 0;
+        // top: -48%;
+
+        &::after{
+            content: "";
+            display: block;
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $color-primary;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+    }
+
+    &-radio--input:checked ~ &-radio--label &-radio--button::after{
+        opacity: 1;
     }
 }

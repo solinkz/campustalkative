@@ -1,6 +1,26 @@
+// TEXT
 .text-primary{
     color: $color-primary !important;
 }
+
+.f-s-default{
+    font-size: $default-font-size;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .line{
     height: 1px;
     width: 100%;
@@ -25,6 +45,14 @@
     &::before{
         content: '#';
     }
+}
+
+.disappear{
+    position: absolute;
+    top: -100rem;
+    opacity: 0 !important;
+    visibility: hidden !important;
+
 }
 
 .dropleft .dropdown-toggle::before,

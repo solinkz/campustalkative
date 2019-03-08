@@ -98,6 +98,9 @@ a:hover {
 .text-primary {
   color: #f6891f !important; }
 
+.f-s-default {
+  font-size: 1.6rem; }
+
 .line {
   height: 1px;
   width: 100%;
@@ -114,6 +117,12 @@ a:hover {
   font-weight: 700; }
   .hashtag::before {
     content: '#'; }
+
+.disappear {
+  position: absolute;
+  top: -100rem;
+  opacity: 0 !important;
+  visibility: hidden !important; }
 
 .dropleft .dropdown-toggle::before,
 .dropdown-toggle::after {
@@ -318,6 +327,15 @@ a:hover {
 .form {
   padding: 2rem;
   font-size: 1.6rem; }
+  .form-category {
+    padding: 2rem 0; }
+    .form-category:not(:last-child) {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+    .form-category-title {
+      color: #000;
+      font-weight: 500;
+      margin-bottom: 2rem; }
   .form-control {
     color: #303030;
     padding: .5rem 2rem;
@@ -371,6 +389,41 @@ a:hover {
     @media (min-width: 48em) {
       .form-submit {
         font-size: 1.6rem; } }
+  .form-radio--group {
+    width: 49%;
+    display: inline-block; }
+  .form-radio--input {
+    display: none; }
+  .form-radio--label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    color: #3f3f3f;
+    display: inline-flex;
+    align-items: center; }
+  .form-radio--button {
+    width: 3rem;
+    height: 3rem;
+    margin-right: .5rem;
+    border: 5px solid #f6891f;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative; }
+    .form-radio--button::after {
+      content: "";
+      display: block;
+      width: 1.3rem;
+      height: 1.3rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f6891f;
+      opacity: 0;
+      transition: opacity .2s; }
+  .form-radio--input:checked ~ .form-radio--label .form-radio--button::after {
+    opacity: 1; }
 
 .btn, .btn:link, .btn:visited {
   padding: 1.2rem 2rem;
@@ -993,6 +1046,10 @@ a:hover {
     min-height: 70vh;
     width: 100%;
     padding: 2rem; }
+  .profile-img-set, .profile-info-set {
+    background-color: #fff;
+    width: 100%;
+    padding: 2rem; }
   .profile-category {
     display: flex;
     justify-content: center;
@@ -1052,7 +1109,7 @@ a:hover {
       background-repeat: no-repeat;
       background-position: 100% 50%; }
       .profile-setting-list li.nav-item:not(:last-child) {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
   .profile-post {
     background-color: #fff;
     width: 100%;
