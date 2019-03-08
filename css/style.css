@@ -1042,6 +1042,17 @@ a:hover {
     background-color: #fff; }
     .profile-setting-toggle .material-icons {
       font-size: 3rem; }
+  .profile-setting-list {
+    flex-direction: column !important; }
+    .profile-setting-list li.nav-item {
+      padding: 1rem;
+      margin-right: 0;
+      position: relative;
+      background-image: url(../img/keyboard-arrow-right.svg);
+      background-repeat: no-repeat;
+      background-position: 100% 50%; }
+      .profile-setting-list li.nav-item:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
   .profile-post {
     background-color: #fff;
     width: 100%;
