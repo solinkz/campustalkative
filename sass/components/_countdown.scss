@@ -1,0 +1,59 @@
+.countdown{
+
+    &-container{
+        background-image: linear-gradient(rgba($color-primary, .92), rgba($color-primary, .92)),
+                      url(../img/ctland.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+
+    &-img{
+        width: 80%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include respond(tab){
+           width: 30%;
+        }
+    }
+
+    &-title{
+        font-size: 4rem;
+        font-weight: 300;
+        margin: 3rem 0;
+        color: $color-white;
+        @include respond(tab){
+           font-weight: 100;
+           font-size: 5rem
+        }
+    }
+    &-time{
+        font-size: 4rem;
+        font-weight: 300;
+        color: $color-white;
+        display: inline-block;
+        padding: 1rem .5rem;
+        border-radius: .5rem;
+        background-color: rgba($color-black, .4);
+
+
+        &:not(:last-child){
+            margin-right: 2px;
+
+            @include respond(tab){
+                margin-right: 3rem;
+            }
+        }
+        @include respond(tab){
+           font-weight: 100;
+        }
+    }
+}

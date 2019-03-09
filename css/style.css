@@ -324,6 +324,54 @@ a:hover {
       .compose .modal-footer {
         border-top: 1px solid rgba(0, 0, 0, 0.1); } }
 
+.countdown-container {
+  background-image: linear-gradient(rgba(246, 137, 31, 0.92), rgba(246, 137, 31, 0.92)), url(../img/ctland.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+
+.countdown-img {
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  @media (min-width: 48em) {
+    .countdown-img {
+      width: 30%; } }
+
+.countdown-title {
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 3rem 0;
+  color: #fff; }
+  @media (min-width: 48em) {
+    .countdown-title {
+      font-weight: 100;
+      font-size: 5rem; } }
+
+.countdown-time {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #fff;
+  display: inline-block;
+  padding: 1rem .5rem;
+  border-radius: .5rem;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .countdown-time:not(:last-child) {
+    margin-right: 2px; }
+    @media (min-width: 48em) {
+      .countdown-time:not(:last-child) {
+        margin-right: 3rem; } }
+  @media (min-width: 48em) {
+    .countdown-time {
+      font-weight: 100; } }
+
 .form {
   padding: 2rem;
   font-size: 1.6rem; }
@@ -663,6 +711,8 @@ a:hover {
     left: 2rem; }
   .header-logo-img {
     height: 5rem; }
+    .header-logo-img--lg {
+      height: 7rem; }
   .header-text-box {
     display: block;
     position: absolute;
