@@ -712,7 +712,10 @@ a:hover {
   .header-logo-img {
     height: 5rem; }
     .header-logo-img--lg {
-      height: 7rem; }
+      height: 5.8rem; }
+      @media (min-width: 48em) {
+        .header-logo-img--lg {
+          height: 7rem; } }
   .header-text-box {
     display: block;
     position: absolute;

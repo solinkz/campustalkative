@@ -20,7 +20,11 @@
         height: 5rem;
 
         &--lg{
-            height: 7rem;
+            height: 5.8rem;
+            @include respond(tab){
+                
+                height: 7rem;
+            }
         }
     }
 
