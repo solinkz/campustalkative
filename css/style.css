@@ -502,6 +502,15 @@ a:hover {
 .btn-primary:hover {
   background-color: #f58110; }
 
+.btn-white, .btn-white:link, .btn-white:active:focus, .btn-white:visited {
+  color: #f6891f;
+  background-color: #fff !important;
+  outline: none;
+  border: none !important; }
+
+.btn-white:hover {
+  background-color: #fcfcfc; }
+
 .btn-sm {
   padding: .5rem 2rem; }
 
@@ -915,6 +924,43 @@ a:hover {
         outline: none; }
     .nav-search .search-close {
       cursor: pointer; }
+
+.error {
+  position: relative;
+  height: 100vh;
+  width: 100%; }
+  .error-404 {
+    background-image: url(../img/404.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center; }
+  .error-heading {
+    font-size: 15rem;
+    font-weight: 100; }
+    @media (min-width: 62em) {
+      .error-heading {
+        font-size: 20rem; } }
+  .error-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh; }
+  .error-message {
+    font-size: 1.8rem;
+    text-align: center; }
+    @media (min-width: 62em) {
+      .error-message {
+        font-size: 2.4rem; } }
+  .error-footer {
+    font-size: 1.6rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 2rem;
+    width: 100%; }
 
 .forum {
   margin-top: 3rem;

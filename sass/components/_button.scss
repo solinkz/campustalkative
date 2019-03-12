@@ -39,6 +39,21 @@
             background-color: darken($color-primary, 3%);
         }
     }
+    &-white{
+        &,
+        &:link,
+        &:active:focus,
+        &:visited{
+            color: $color-primary;
+            background-color: $color-white !important;
+            outline: none;
+            border: none !important;
+        }
+        
+        &:hover{
+            background-color: darken($color-white, 1%);
+        }
+    }
 
     &-sm{
          padding: .5rem 2rem;
