@@ -134,6 +134,11 @@ a:hover {
     .mobile-view-only {
       display: none; } }
 
+.justify-align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .auth {
   width: 100%;
   background: #fff; }
@@ -934,12 +939,18 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center; }
+  .error-construction {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center; }
   .error-heading {
     font-size: 15rem;
     font-weight: 100; }
     @media (min-width: 62em) {
       .error-heading {
         font-size: 20rem; } }
+    .error-heading--sm {
+      font-size: 8rem; }
   .error-wrapper {
     position: relative;
     display: flex;
@@ -947,6 +958,8 @@ a:hover {
     align-items: center;
     flex-direction: column;
     height: 80vh; }
+    .error-wrapper--adjust {
+      height: auto; }
   .error-message {
     font-size: 1.8rem;
     text-align: center; }

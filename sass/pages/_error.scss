@@ -9,6 +9,12 @@
         background-size: cover;
         background-position: bottom center;
     }
+    &-construction{
+        // background-image: url(../img/tools.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
 
     &-heading{
         font-size: 15rem;
@@ -16,6 +22,10 @@
         @include respond(desktop){
             font-size: 20rem;
             
+        }
+
+        &--sm{
+            font-size: 8rem;
         }
 
         
@@ -28,6 +38,10 @@
         align-items: center;
         flex-direction: column;
         height: 80vh;
+
+        &--adjust{
+            height: auto;
+        }
     }
 
     &-message{

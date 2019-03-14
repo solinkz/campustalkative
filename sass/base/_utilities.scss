@@ -61,3 +61,7 @@
     }
 
 }
+
+.justify-align-center{
+    @include justifyAlignCenter;
+}
