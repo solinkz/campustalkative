@@ -7,8 +7,8 @@
 }
 
 html{
-    // font-size: 50%; // 1rem = 8px
-    font-size: 56.25%; //1rem = 9px
+    font-size: 50%; // 1rem = 8px
+    // font-size: 56.25%; //1rem = 9px
     
     @include respond(phone-land){
         font-size: 56.25%; //1rem = 9px
