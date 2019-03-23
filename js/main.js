@@ -42,6 +42,9 @@ $(document).ready(function(){
             //  update the data limit on the view
             $('.word-length').text(composer.limit);
 
+
+            a.innerHTML = 1000;
+
             // update data-limit on the textarea
             composer.area.attr('maxlength', composer.limit);
 
