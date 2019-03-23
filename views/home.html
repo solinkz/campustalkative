@@ -178,15 +178,35 @@
 
                                             <!-- share -->
 
-                                            <span class="iua-action news-card-share" data-toggle="modal" data-target="#shareModal">
+                                            <!-- <span class="iua-action news-card-share" data-toggle="modal" data-target="#shareModal">
                                                 <i class="material-icons">share</i>
-                                            </span>
+                                            </span> -->
 
-                                            <span class="iua-action news-card-share" data-toggle="modal" data-target="#shareModal">
+                                            <span class="iua-action news-card-share" data-toggle="modal" data-target="#moreModal">
                                                 <i class="material-icons">more_vert</i>
                                             </span>
                                             
                                             
+                                            <div class="modal fade" id="moreModal" tabindex="-1" role="dialog" aria-labelledby="shareModallabel"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        
+                                                        <ul class="nav  p-4 flex-column">
+                                                            <li class="nav-items">
+                                                                <a href="#" class="nav-link">edit post</a>
+                                                            </li>
+                                                            <li class="nav-items">
+                                                                <a href="#" class="nav-link">delete post</a>
+                                                            </li>
+                                                            <li class="nav-items">
+                                                                <a href="#" class="nav-item" data-toggle="modal" data-target="#shareModal">share</a>
+                                                            </li>
+                                                        </ul>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="shareModallabel"
                                                 aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered" role="document">
