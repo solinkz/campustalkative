@@ -604,6 +604,23 @@ a:hover {
     color: #fff !important;
     border-radius: 5px;
     line-height: 1.5; }
+  .news-card-dropdown {
+    position: relative; }
+    .news-card-dropdown .dropdown-toggle {
+      cursor: pointer; }
+    .news-card-dropdown .dropdown-menu {
+      left: -100% !important;
+      min-width: 14rem; }
+      @media (min-width: 36em) {
+        .news-card-dropdown .dropdown-menu {
+          left: -8rem !important; } }
+    .news-card-dropdown a.dropdown-item {
+      color: #303030;
+      font-size: 1.8rem;
+      padding-top: .6rem;
+      padding-bottom: .6rem; }
+      .news-card-dropdown a.dropdown-item .material-icons {
+        font-size: 1.6rem; }
   .news-card-share {
     cursor: pointer; }
   .news-card .more {

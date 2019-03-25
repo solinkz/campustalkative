@@ -75,10 +75,43 @@
         color: $color-white !important;
         border-radius: 5px;
         line-height: 1.5;
+
+        
     }
+
+
+    &-dropdown{
+        position: relative;
+
+        .dropdown-toggle{
+            cursor: pointer;
+        }
+
+        .dropdown-menu{
+            left: -100% !important;
+            min-width: 14rem;
+            @include respond(phone-land){
+                left: -8rem !important;
+            }
+        }
+
+        a.dropdown-item{
+            color: $color-secondary;
+            font-size: 1.8rem;
+            padding-top: .6rem;
+            padding-bottom: .6rem;
+
+
+            .material-icons{
+                font-size: 1.6rem;
+            }
+        }
+    }
+
     &-share{
         cursor: pointer;
     }
+
     .more{
         display: none;
     }

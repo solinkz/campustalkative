@@ -182,12 +182,36 @@
                                                 <i class="material-icons">share</i>
                                             </span> -->
 
-                                            <span class="iua-action news-card-share" data-toggle="modal" data-target="#moreModal">
-                                                <i class="material-icons">more_vert</i>
-                                            </span>
+
+                                            <div class="dropdown news-card-dropdown">
+                                                <span class="iua-action  dropdown-toggle"  id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="material-icons">more_vert</i>
+                                                </span>
+
+                                                <div class="dropdown-menu shadow-lg" aria-labelledby="moreDropdown">
+                                                    <a href="#" class="dropdown-item">
+                                                        <i class="material-icons">edit</i>
+                                                        edit post
+                                                    </a>
+                                                    <a href="#" class="dropdown-item">
+                                                        <i class="material-icons">delete_outline</i>
+                                                        delete post
+                                                    </a>
+                                                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#shareModal">
+                                                        <i class="material-icons" >share</i>
+                                                        share
+                                                    </a>
+                                                    
+                                                </div>
+
+                                            </div>
+
+
+
+
+
                                             
-                                            
-                                            <div class="modal fade" id="moreModal" tabindex="-1" role="dialog" aria-labelledby="shareModallabel"
+                                            <!-- <div class="modal fade" id="moreModal" tabindex="-1" role="dialog" aria-labelledby="shareModallabel"
                                                 aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                                     <div class="modal-content">
@@ -206,7 +230,7 @@
                                                         
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="shareModallabel"
                                                 aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -458,8 +482,8 @@
     </div>
 <body>
 <script src="../js/jquery-3.3.1.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
 <script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script src="../js/main.js"></script>
 </body>
 
