@@ -1127,6 +1127,23 @@ a:hover {
         display: block;
         flex: calc(40% - 5rem) 0 0; } }
 
+.page-extra {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  color: #303030; }
+  .page-extra-section {
+    margin: 2rem 0; }
+  .page-extra-text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: justify; }
+  .page-extra-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem; }
+
 .section-main .main-caption {
   font-size: 1.9rem;
   text-align: center;
