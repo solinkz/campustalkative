@@ -529,11 +529,11 @@ a:hover {
     width: 3.8rem;
     height: 3.8rem; }
   .img-circle--profile {
-    width: 18rem;
+    width: auto;
     height: 18rem; }
     @media (min-width: 48em) {
       .img-circle--profile {
-        width: 14rem;
+        width: auto;
         height: 14rem; } }
 
 .img-avatar {
@@ -562,17 +562,18 @@ a:hover {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%; }
   .news-card:not(:last-child) {
     margin-bottom: 3rem; }
   .news-card-header {
     padding: 1rem; }
   .news-card-media {
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     background-color: #f7f7f7; }
   .news-card-img {
-    width: 100%; }
+    max-width: 100%; }
   .news-card-text {
     padding: 2rem;
     font-size: 1.6rem;
