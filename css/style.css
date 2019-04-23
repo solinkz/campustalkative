@@ -1310,7 +1310,7 @@ a:hover {
     .tv-video-detail-item {
       display: inline-flex;
       align-items: center;
-      font-size: 1.6rem; }
+      font-size: 1.4rem; }
       @media (min-width: 48em) {
         .tv-video-detail-item {
           font-size: 1.2rem; } }
