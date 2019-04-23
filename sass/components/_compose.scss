@@ -3,14 +3,14 @@
     &-toggle{
         width: 7rem;
         height: 7rem;
-        background-color: $color-primary;
+        background-color: rgba($color-primary, .9);
         color: $color-white;
         display: flex;
         align-items: center;
         justify-content: center;
         position: fixed;
         right: 7%;
-        bottom: 10%;
+        bottom: 15%;
         border-radius: 50%;
         border: none;
         outline: none;

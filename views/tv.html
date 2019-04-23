@@ -18,6 +18,7 @@
     <title>Campustalkative - we talk to connect</title>
 
 </head>
+<body>
     <div id="app-main-secondary">
        <nav class="nav nav-bar">
             <div class="container nav-container">
@@ -73,19 +74,116 @@
 
        <main class="content">
             <div class="container">
-                <section class="main-content">
+                <section class="main-content d-block">
                     <h1 class="page-title mobile-view-only"> CT TV</h1>
+                    <div id="tv" class="tv">
+
+                        <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="tv-filter">
+
+                                    <!-- <small class="text-secondary">FILTER</small> -->
+                                    <a class="card " data-toggle="collapse" href="#filterList" aria-expanded="false" aria-controls="filterList">
+                                        <div class="card-body d-flex justify-content-between">
+                                            <span class="tv-filter-name">All</span>
+                                            <i class="material-icons">filter_list</i>
+                                    
+                                        </div>
+                                    </a>
+                                    <div class="collapse tv-filter-list" id="filterList">
+                                      
+                                        <ul class="list-group">
+                                            <li class="list-group-item tv-filter-item">All</li>
+                                            <li class="list-group-item tv-filter-item">Campus Blunder</li>
+                                            <li class="list-group-item tv-filter-item">I talk</li>
+                                            <li class="list-group-item tv-filter-item">Fashion Trends</li>
+                                            <li class="list-group-item tv-filter-item">Youth Matters</li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="tv-content">
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            
+                                            <a href="#" class="tv-poster">
+                                                <img src="../img/4.jpg" alt="poster" class="tv-poster-image">
+
+                                                <div class="tv-caption">
+                                                    CHECKOUT THIS STUDENT
+                                                </div>
+                                                <div class="tv-video-detail">
+                                                   <div class="tv-video-detail-holder">
+                                                       <div>
+                                                           <span class="tv-video-detail-item views">
+                                                               <i class="material-icons">visibility</i>
+                                                               6 views
+                                                           </span>
+                                                           <span class="tv-video-detail-item like">
+                                                               <i class="material-icons liked">favorite_border</i>
+                                                               4 likes
+                                                            </span>
+                                                           
+                                                           <span class=" tv-video-detail-item share">
+                                                               <i class="material-icons">share</i>
+                                                               2 shares
+                                                           </span>
+
+                                                       </div>
+
+                                                       <div class="tv-video-detail-category">
+                                                           campus blunderrrrr
+                                                       </div>
+                                                   </div>
+                                                </div>
+                                            </a href="#">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </section>
             </div>
        </main>
 
   
     </div>
-<body>
+
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/main.js"></script>
+
+<script>
+
+    // FILTER LIST NAME CHANGE
+
+    var filterName = $('.tv-filter-name');
+    var filter = {
+        name: 'All'
+      
+    };
+
+    $('.tv-filter-item').on('click', function () {
+
+            filter.name = $(this).text();
+
+            filterName.text(filter.name);
+
+    })
+
+
+
+</script>
+
 </body>
 
 </html>
