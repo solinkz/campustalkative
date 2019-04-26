@@ -256,6 +256,57 @@
             </div>
        </main>
 
+        <div class="compose">
+            <button type="button" class="compose-toggle shadow-lg" data-toggle="modal" data-target="#tvUploadModal">
+        
+                <i class="material-icons">video_call</i>
+        
+            </button>
+            <div class="modal fade" id="tvUploadModal" tabindex="-1" role="dialog" aria-labelledby="tvUploadModallabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="heading-secondary" id="composeModallabel">Upload a New Video</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i class="material-icons">close</i></span>
+                            </button>
+                        </div>
+                        <form action="" method="POST" class="compose-form">
+                            <div class="modal-body">
+                                <form action="#" method="post">
+                                    <div class="form-group">
+                                        <label for="videoCaption">What caption would you like to give this video?</label>
+                                        <input type="text" name="videoCaption" id="videoCaption" class="form-control" placeholder="Video Caption">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>You'd need a Poster for this Video, Upload one</label>
+                                        <div class="p-2 shadow-sm border d-flex justify-content-end">
+                                            <input type="file" name="uploadPoster" id="uploadPoster" class="compose-upload">
+                                            <label for="uploadPoster" class="btn btn-light compose-btn ">upload poster</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Upload your video</label>
+                                        <div class="p-2 shadow-sm border d-flex justify-content-end">
+                                            <input type="file" name="uploadVideo" id="uploadVideo" class="compose-upload">
+                                            <label for="uploadVideo" class="btn btn-light compose-btn ">upload Video</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                               
+            
+                                <button type="button" class="btn btn-primary compose-btn ">Publish</button>
+                            </div>
+            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
   
     </div>
 
