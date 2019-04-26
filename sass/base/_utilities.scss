@@ -62,6 +62,26 @@
 
 }
 
+.pc-view-only{
+
+    display: none;
+
+    @include respond(desktop){
+        display: block;
+    }
+
+}
+
+.tab-up-only{
+
+    display: none;
+
+    @include respond(tab){
+        display: block;
+    }
+
+}
+
 .justify-align-center{
     @include justifyAlignCenter;
 }

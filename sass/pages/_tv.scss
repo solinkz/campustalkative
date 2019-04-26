@@ -18,18 +18,21 @@
 
         width: 100%;
         position: relative;
-        display: block;
+        display: flex;
         margin-bottom: 1rem;
+        max-height: 22rem;
+        height: 22rem;
+        overflow-y: hidden;
+        background-color: $color-black;
         
         // &:not(:last-child){
         //     margin-bottom: 1rem;
         // }
 
-        @include respond(tab){
-            margin-bottom: 0;
-        }
+    
         &-image{
             width: 100%;
+            align-self: center;
         }
 
     
@@ -88,6 +91,25 @@
             font-size: 1.2rem;
             height: 2.6rem;
 
+        }
+    }
+
+
+    &-video{
+        &-view{
+            width: 100%;
+            padding: 0;
+            background-color: $color-white;
+            position: relative;
+        }
+
+
+        &-player{
+            width: 100%;
+
+            video{
+                max-width: 100%;
+            }
         }
     }
 }
