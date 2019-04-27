@@ -52,10 +52,10 @@
 
                 <div class="nav-main nav-main--bottom">
                      <ul class="nav-menu nav-menu--bottom">
-                         <li class="nav-item active">
+                         <li class="nav-item ">
                             <a href="home.html"><i class="material-icons">home</i></a>
                          </li>
-                         <li class="nav-item">
+                         <li class="nav-item active">
                             <a href="tv.html"><i class="material-icons">live_tv</i></a>
                          </li>
                          <li class="nav-item">
@@ -86,9 +86,12 @@
                         <div class="row">
 
                             <div class="col-md-4">
+
+                                <!-- tab up only shows items only when screen is a tab or higher -->
                                <div class="tab-up-only">
-                                    <a href="#" class="tv-poster">
-                                        <img src="../img/4.jpg" alt="poster" class="tv-poster-image">
+                                    <h2 class="heading-secondary p-0">RELATED VIDEOS</h2>
+                                    <a href="#" class="tv-thumbnail tv-thumbnail--secondary">
+                                        <img src="../img/4.jpg" alt="poster" class="tv-thumbnail-image">
                                     
                                         <div class="tv-caption">
                                             CHECKOUT THIS STUDENT
@@ -100,15 +103,7 @@
                                                         <i class="material-icons">visibility</i>
                                                         6 views
                                                     </span>
-                                                    <span class="tv-video-detail-item like">
-                                                        <i class="material-icons liked">favorite_border</i>
-                                                        4 likes
-                                                    </span>
-                                    
-                                                    <span class=" tv-video-detail-item share">
-                                                        <i class="material-icons">share</i>
-                                                        2 shares
-                                                    </span>
+                                                    
                                     
                                                 </div>
                                     
@@ -118,37 +113,30 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="#" class="tv-poster">
-                                        <img src="../img/4.jpg" alt="poster" class="tv-poster-image">
+                                    <a href="#" class="tv-thumbnail tv-thumbnail--secondary">
+                                        <img src="../img/7.jpg" alt="poster" class="tv-thumbnail-image">
                                     
                                         <div class="tv-caption">
-                                            CHECKOUT THIS STUDENT
+                                            When Nature shocked the world
                                         </div>
                                         <div class="tv-video-detail">
                                             <div class="tv-video-detail-holder">
                                                 <div>
                                                     <span class="tv-video-detail-item views">
                                                         <i class="material-icons">visibility</i>
-                                                        6 views
+                                                        20 views
                                                     </span>
-                                                    <span class="tv-video-detail-item like">
-                                                        <i class="material-icons liked">favorite_border</i>
-                                                        4 likes
-                                                    </span>
-                                    
-                                                    <span class=" tv-video-detail-item share">
-                                                        <i class="material-icons">share</i>
-                                                        2 shares
-                                                    </span>
+                                                    
                                     
                                                 </div>
                                     
                                                 <div class="tv-video-detail-category">
-                                                    campus blunderrrrr
+                                                    I talk
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
+                                  
                                </div>
                             </div>
                             <div class="col-md-8">
@@ -164,12 +152,102 @@
                                             </p>
                                         </video>
                                    </div>
-                                   <!-- <div class="tv-caption">
-
-                                   </div> -->
+                                   <div class="tv-caption tv-caption--full">
+                                        OMG!!, you won't believe what happended
+                                   </div>
 
                                    <div class="tv-video-action">
 
+                                       <!-- holder for like, comment, views -->
+
+                                        <div class="tv-video-detail-holder p-2">
+
+                                            <!-- like | comment side -->
+                                            <div class="d-flex align-items-center">
+                                                <span class="tv-video-detail-item news-card-action like">
+                                                    <i class="material-icons liked">favorite_border</i>
+                                                    4 
+                                                </span>
+                                                <span class="tv-video-detail-item news-card-action comment">
+                                                    <i class="material-icons liked">comment</i>
+                                                    10
+                                                </span>
+                                                
+                                                <!-- <span class=" tv-video-detail-item news-card-action share">
+                                                    <i class="material-icons">share</i>
+                                                    2 
+                                                </span> -->
+                                                
+                                            </div>
+                                            
+                                            <!-- RHS actions -->
+                                            <div class="d-flex align-items-center ">
+                                                <span class="tv-video-detail-item views">
+                                                    <i class="material-icons">visibility</i>
+                                                    6 views
+                                                </span>
+
+                                                <div class="dropdown tv-option-dropdown">
+                                                    <span class="iua-action  dropdown-toggle" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <i class="material-icons">more_vert</i>
+                                                    </span>
+                                                
+                                                    <div class="dropdown-menu shadow-lg" aria-labelledby="moreDropdown">
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="material-icons">edit</i>
+                                                            edit video detail
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="material-icons">videocam_off</i>
+                                                            delete video
+                                                        </a>
+                                                        <a href="#" class="dropdown-item" data-toggle="modal" data-target="#shareModal">
+                                                            <i class="material-icons">share</i>
+                                                            share
+                                                        </a>
+                                                
+                                                    </div>
+                                                
+                                                </div>
+                                                
+      
+                                                <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="shareModallabel"
+                                                    aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                
+                                                            <ul class="nav  p-4 justify-content-around">
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="../img/facebook.svg" alt="facebook" height="40">
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="../img/whatsapp.svg" alt="whatsapp" height="40">
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                
+                                                                        <img src="../img/instagram.svg" alt="instagram" height="40">
+                                                
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="../img/twitter.svg" alt="twitter" height="40">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                    </div>
                                    <div class="tv-video-comment">
                                         <div class="comment-sec">
@@ -225,8 +303,8 @@
     </div>
 
 <script src="../js/jquery-3.3.1.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
 <script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 
 <!-- video js -->
 <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>

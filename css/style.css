@@ -1370,18 +1370,27 @@ a:hover {
     @media (min-width: 48em) {
       .tv-content {
         margin-top: 0; } }
-  .tv-poster {
+  .tv-thumbnail {
     width: 100%;
     position: relative;
     display: flex;
     margin-bottom: 1rem;
     max-height: 22rem;
     height: 22rem;
-    overflow-y: hidden;
-    background-color: #000; }
-    .tv-poster-image {
+    overflow: hidden;
+    background-color: #000;
+    transition: all .3s; }
+    .tv-thumbnail--secondary {
+      max-height: 12rem; }
+      @media (min-width: 62em) {
+        .tv-thumbnail--secondary {
+          max-height: 16rem; } }
+    .tv-thumbnail-image {
       width: 100%;
-      align-self: center; }
+      align-self: center;
+      transition: all 1s; }
+    .tv-thumbnail:hover .tv-thumbnail-image {
+      transform: scale(1.1); }
   .tv-caption {
     position: absolute;
     top: 0;
@@ -1391,7 +1400,16 @@ a:hover {
     width: 100%;
     padding: 1rem;
     font-size: 1.6rem;
-    color: #fff; }
+    color: #fff;
+    text-transform: uppercase; }
+    .tv-caption--full {
+      position: relative;
+      height: auto;
+      width: auto;
+      background: transparent;
+      color: #303030;
+      font-size: 1.8rem;
+      font-weight: 500; }
   .tv-video-detail {
     position: absolute;
     bottom: 0;
@@ -1423,7 +1441,7 @@ a:hover {
       padding: 2px .5rem;
       background-color: #fff;
       color: #f6891f;
-      font-size: 1.2rem;
+      font-size: 1rem;
       height: 2.6rem; }
   .tv-video-view {
     width: 100%;
@@ -1434,3 +1452,20 @@ a:hover {
     width: 100%; }
     .tv-video-player video {
       max-width: 100%; }
+  .tv-option-dropdown {
+    position: relative; }
+    .tv-option-dropdown .dropdown-toggle {
+      cursor: pointer; }
+    .tv-option-dropdown .dropdown-menu {
+      left: -6rem !important;
+      min-width: 14rem; }
+      @media (min-width: 36em) {
+        .tv-option-dropdown .dropdown-menu {
+          left: -8rem !important; } }
+    .tv-option-dropdown a.dropdown-item {
+      color: #303030;
+      font-size: 1.8rem;
+      padding-top: .6rem;
+      padding-bottom: .6rem; }
+      .tv-option-dropdown a.dropdown-item .material-icons {
+        font-size: 1.6rem; }

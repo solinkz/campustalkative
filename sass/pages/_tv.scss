@@ -14,7 +14,7 @@
         }
     }
 
-    &-poster{
+    &-thumbnail{
 
         width: 100%;
         position: relative;
@@ -22,19 +22,35 @@
         margin-bottom: 1rem;
         max-height: 22rem;
         height: 22rem;
-        overflow-y: hidden;
+        overflow: hidden;
         background-color: $color-black;
+        transition: all .3s;
         
         // &:not(:last-child){
         //     margin-bottom: 1rem;
         // }
 
+        &--secondary{
+            max-height: 12rem;
+            
+            @include respond(desktop){
+                max-height: 16rem;
+
+            }
+
+        }
     
         &-image{
             width: 100%;
             align-self: center;
+            transition: all 1s;
+
         }
 
+        &:hover &-image{
+            transform: scale(1.1);
+           
+        }
     
     }
 
@@ -48,6 +64,17 @@
         padding: 1rem;
         font-size: $default-font-size;
         color: $color-white;
+        text-transform: uppercase;
+
+        &--full{
+            position: relative;
+            height: auto;
+            width: auto;
+            background: transparent;
+            color: $color-secondary;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
     }
 
     &-video-detail{
@@ -66,6 +93,7 @@
         &-holder{
             display: flex;
             justify-content: space-between;
+           
             width: 100%;
         }
         &-item{
@@ -88,7 +116,7 @@
             padding: 2px .5rem;
             background-color: $color-white;
             color: $color-primary;
-            font-size: 1.2rem;
+            font-size: 1rem;
             height: 2.6rem;
 
         }
@@ -112,4 +140,35 @@
             }
         }
     }
+
+  
+
+    &-option-dropdown{
+        position: relative;
+
+        .dropdown-toggle{
+            cursor: pointer;
+        }
+
+        .dropdown-menu{
+            left: -6rem !important;
+            min-width: 14rem;
+            @include respond(phone-land){
+                left: -8rem !important;
+            }
+        }
+
+        a.dropdown-item{
+            color: $color-secondary;
+            font-size: 1.8rem;
+            padding-top: .6rem;
+            padding-bottom: .6rem;
+
+
+            .material-icons{
+                font-size: 1.6rem;
+            }
+        }
+    }
+
 }
