@@ -1452,17 +1452,21 @@ a:hover {
     padding: 0;
     background-color: #fff;
     position: relative; }
+  .tv-video-action {
+    border-top: 1px solid rgba(0, 0, 0, 0.1); }
   .tv-video-player {
     width: 100%; }
     .tv-video-player video {
       max-width: 100%; }
   .tv-video-slider {
-    padding: .5rem 0;
+    padding: .5rem;
     position: relative; }
   .tv-video-related {
     background: #fff; }
     .tv-video-related--mobile {
-      transform: scale(1.1); }
+      margin: 2.5rem 0;
+      transform: scale(1.07);
+      box-shadow: 0 0 3rem rgba(0, 0, 0, 0.3) !important; }
   .tv-option-dropdown {
     position: relative; }
     .tv-option-dropdown .dropdown-toggle {
