@@ -10,6 +10,10 @@
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+
     <!-- video css -->
     <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
 
@@ -249,6 +253,96 @@
                                             </div>
                                         </div>
                                    </div>
+
+
+                                   <!-- RELATED VIDEO SLIDER FOR MOBILE VIEW -->
+
+                                   <div class="tv-video-related tv-video-related--mobile mobile-view-only shadow-lg my-3">
+                                        <h2 class="heading-secondary ">RELATED VIDEOS</h2>
+
+                                        <div class="tv-video-slider">
+
+                                            <div class="owl-carousel owl-theme">
+    
+                                                <div class="item">
+                                                    <a href="#" class="tv-thumbnail tv-thumbnail--tertiary">
+                                                        <img src="../img/4.jpg" alt="poster" class="tv-thumbnail-image">
+                                                    
+                                                        <div class="tv-caption">
+                                                            CHECKOUT THIS STUDENT
+                                                        </div>
+                                                        <div class="tv-video-detail">
+                                                            <div class="tv-video-detail-holder">
+                                                                <div>
+                                                                    <span class="tv-video-detail-item views">
+                                                                        <i class="material-icons">visibility</i>
+                                                                        6 views
+                                                                    </span>
+                                                    
+                                                    
+                                                                </div>
+                                                    
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="tv-thumbnail tv-thumbnail--tertiary">
+                                                        <img src="../img/8.jpg" alt="poster" class="tv-thumbnail-image">
+                                                    
+                                                        <div class="tv-caption">
+                                                            Im amazed
+                                                        </div>
+                                                        <div class="tv-video-detail">
+                                                            <div class="tv-video-detail-holder">
+                                                                <div>
+                                                                    <span class="tv-video-detail-item views">
+                                                                        <i class="material-icons">visibility</i>
+                                                                        6 views
+                                                                    </span>
+                                                    
+                                                    
+                                                                </div>
+                                                    
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="tv-thumbnail tv-thumbnail--tertiary">
+                                                        <img src="../img/7.jpg" alt="poster" class="tv-thumbnail-image">
+                                                    
+                                                        <div class="tv-caption">
+                                                            Im amazed
+                                                        </div>
+                                                        <div class="tv-video-detail">
+                                                            <div class="tv-video-detail-holder">
+                                                                <div>
+                                                                    <span class="tv-video-detail-item views">
+                                                                        <i class="material-icons">visibility</i>
+                                                                        6 views
+                                                                    </span>
+                                                    
+                                                    
+                                                                </div>
+                                                    
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+    
+                                            </div>
+
+                                        </div>
+
+                                   </div>
+
+
+
+                                   <!-- COMMENTS SECTION -->
                                    <div class="tv-video-comment">
                                         <div class="comment-sec">
                                             <h3 class="heading-tertiary">Comments</h3>
@@ -305,6 +399,7 @@
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
 
 <!-- video js -->
 <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
@@ -313,9 +408,32 @@
 
 <script>   
 
+    // video js
+
     var player = videojs('my-video', {
             responsive: true
         });
+
+
+    // owl-carousel
+    $('.owl-carousel').owlCarousel({
+        loop: false,
+        margin: 5,
+        nav: false,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    });
+
+
 
 </script>
 

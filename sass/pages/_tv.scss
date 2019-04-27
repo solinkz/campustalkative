@@ -39,6 +39,14 @@
             }
 
         }
+
+        &--tertiary{
+            max-height: 12rem;
+
+            .material-icons{
+                font-size: $default-font-size;
+            }
+        }
     
         &-image{
             width: 100%;
@@ -138,6 +146,32 @@
             video{
                 max-width: 100%;
             }
+        }
+
+        &-slider{
+            padding: .5rem 0;
+            position: relative;
+
+            // &::before{
+            //     content: '';
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     z-index: 4;
+            //     height: 100%;
+            //     width: 4.5rem;
+            //     background: linear-gradient(to right, rgba($color-white, 1) 30% , rgba($color-white, .8) 70%, rgba($color-white, .0));
+
+            // }
+        }
+
+
+        &-related{
+            background: $color-white;
+            &--mobile{
+                transform: scale(1.1);
+            }
+            
         }
     }
 

@@ -1385,6 +1385,10 @@ a:hover {
       @media (min-width: 62em) {
         .tv-thumbnail--secondary {
           max-height: 16rem; } }
+    .tv-thumbnail--tertiary {
+      max-height: 12rem; }
+      .tv-thumbnail--tertiary .material-icons {
+        font-size: 1.6rem; }
     .tv-thumbnail-image {
       width: 100%;
       align-self: center;
@@ -1452,6 +1456,13 @@ a:hover {
     width: 100%; }
     .tv-video-player video {
       max-width: 100%; }
+  .tv-video-slider {
+    padding: .5rem 0;
+    position: relative; }
+  .tv-video-related {
+    background: #fff; }
+    .tv-video-related--mobile {
+      transform: scale(1.1); }
   .tv-option-dropdown {
     position: relative; }
     .tv-option-dropdown .dropdown-toggle {
