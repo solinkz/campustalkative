@@ -688,7 +688,7 @@ a:hover {
   /* The base font size controls the size of everything, not just text.
      All dimensions use em-based sizes so that the scale along with the font size.
      Try increasing it to 15px and see what happens. */
-  font-size: 10px;
+  font-size: 1rem;
   /* The main font color changes the ICON COLORS as well as the text */
   color: #fff; }
 
@@ -700,7 +700,7 @@ a:hover {
   /* The font size is what makes the big play button...big. 
      All width/height values use ems, which are a multiple of the font size.
      If the .video-js font-size is 10px, then 3em equals 30px.*/
-  font-size: 3em;
+  font-size: 3rem;
   /* We're using SCSS vars here because the values are used in multiple places.
      Now that font size is set, the following em values will be a multiple of the
      new font size. If the font-size is 3em (30px), then setting any of
@@ -710,7 +710,7 @@ a:hover {
   height: 1.5em;
   width: 3em;
   /* 0.06666em = 2px default */
-  border: 0.06666em solid #fff;
+  border: 1px solid #fff;
   /* 0.3em = 9px default */
   border-radius: 0.3em;
   /* Align top left. 0.5em = 15px default */
@@ -766,6 +766,11 @@ a:hover {
   @media (min-width: 62em) {
     .video-js {
       height: 350px; } }
+
+.video-js .vjs-big-play-button {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 #app-main {
   position: relative;

@@ -1,34 +1,26 @@
-// The color of icons, text, and the big play button border.
-// Try changing to #0f0
+
 $primary-foreground-color: #fff; // #fff default
 
-// The default color of control backgrounds is mostly black but with a little
-// bit of blue so it can still be seen on all-black video frames, which are common.
-// Try changing to #900
+/
 $primary-background-color: #2B333F;  // #2B333F default
 
 // Try changing to true
 $center-big-play-button: false; // true default
 
 .video-js {
-  /* The base font size controls the size of everything, not just text.
-     All dimensions use em-based sizes so that the scale along with the font size.
-     Try increasing it to 15px and see what happens. */
-  font-size: 10px;
+  
+  font-size: 1rem;
 
   /* The main font color changes the ICON COLORS as well as the text */
   color: $primary-foreground-color;
 }
 
-/* The "Big Play Button" is the play button that shows before the video plays.
-   To center it set the align values to center and middle. The typical location
-   of the button is the center, but there is trend towards moving it to a corner
-   where it gets out of the way of valuable content in the poster image.*/
+
 .vjs-default-skin .vjs-big-play-button {
   /* The font size is what makes the big play button...big. 
      All width/height values use ems, which are a multiple of the font size.
      If the .video-js font-size is 10px, then 3em equals 30px.*/
-  font-size: 3em;
+  font-size: 3rem;
 
   /* We're using SCSS vars here because the values are used in multiple places.
      Now that font size is set, the following em values will be a multiple of the
@@ -43,7 +35,7 @@ $center-big-play-button: false; // true default
   width: $big-play-width;
 
   /* 0.06666em = 2px default */
-  border: 0.06666em solid $primary-foreground-color;
+  border: 1px solid $primary-foreground-color;
   /* 0.3em = 9px default */
   border-radius: 0.3em;
 
@@ -105,6 +97,9 @@ $slider-bg-color: lighten($primary-background-color, 33%);
   /* Otherwise we'll rely on stacked opacities */
   background: rgba($slider-bg-color, 0.75);
 }
+
+
+// extra customization
 
 .my-video-dimensions {
     width: 100%;
