@@ -1089,6 +1089,9 @@ a:hover {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     margin-bottom: 1rem;
     background-color: #fff; }
+  .explore-reaction {
+    display: inline-flex;
+    align-items: center; }
 
 .forum {
   margin-top: 3rem;

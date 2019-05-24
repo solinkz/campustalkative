@@ -8,4 +8,9 @@
         margin-bottom: 1rem;
         background-color: $color-white;
     }
+
+    &-reaction{
+        display: inline-flex;
+       align-items: center;
+    }
 }
