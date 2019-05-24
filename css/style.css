@@ -685,17 +685,10 @@ a:hover {
     margin-bottom: 1rem; }
 
 .video-js {
-  /* The base font size controls the size of everything, not just text.
-     All dimensions use em-based sizes so that the scale along with the font size.
-     Try increasing it to 15px and see what happens. */
   font-size: 1rem;
   /* The main font color changes the ICON COLORS as well as the text */
   color: #fff; }
 
-/* The "Big Play Button" is the play button that shows before the video plays.
-   To center it set the align values to center and middle. The typical location
-   of the button is the center, but there is trend towards moving it to a corner
-   where it gets out of the way of valuable content in the poster image.*/
 .vjs-default-skin .vjs-big-play-button {
   /* The font size is what makes the big play button...big. 
      All width/height values use ems, which are a multiple of the font size.
@@ -766,11 +759,6 @@ a:hover {
   @media (min-width: 62em) {
     .video-js {
       height: 350px; } }
-
-.video-js .vjs-big-play-button {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
 
 #app-main {
   position: relative;
@@ -1092,6 +1080,15 @@ a:hover {
     text-align: center;
     padding: 2rem;
     width: 100%; }
+
+.explore {
+  padding: 1rem; }
+  .explore-item {
+    padding: .5rem;
+    border-radius: 5px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    margin-bottom: 1rem;
+    background-color: #fff; }
 
 .forum {
   margin-top: 3rem;

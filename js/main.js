@@ -10,10 +10,10 @@ $(document).ready(function(){
         }
     });
 
-    $('.news-card .more').click(function (e) {
-        e.preventDefault();
-        $(this).parent().prev().find('.news-card-text').toggleClass('news-card-text news-card-text--full');
-    })
+    // $('.news-card .more').click(function (e) {
+    //     e.preventDefault();
+    //     $(this).parent().prev().find('.news-card-text').toggleClass('news-card-text news-card-text--full');
+    // })
     // toggle liked icon on click
 
     $(".like").on('click', function(){
