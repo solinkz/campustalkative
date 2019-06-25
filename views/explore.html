@@ -10,6 +10,9 @@
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -71,13 +74,49 @@
 
             </div>
        </nav>
-
+       
        <main class="content">
             <div class="container">
                 <section class="main-content d-block">
                     <h1 class="page-title mobile-view-only"> Explore</h1>
 
                     <div id="expore" class="explore">
+
+                        <div class="explore-options">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="explore-pill">
+                                        #IOI-its only in
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="explore-pill">
+                                        #topTrends
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="explore-pill">
+                                        #campusTrends
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="explore-pill">
+                                        #underground
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="explore-pill">
+                                        #jackiesList
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="row">
                             <div class="col-lg-4 col-md-6">
                                 <div class="explore-item">
@@ -414,7 +453,33 @@
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/popper.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
 <script src="../js/main.js"></script>
+
+
+
+<script>
+
+      // owl-carousel
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 5,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                600: {
+                    items: 5
+                },
+                1000: {
+                    items: 7
+                }
+            }
+        });
+
+</script>
+
 </body>
 
 </html>

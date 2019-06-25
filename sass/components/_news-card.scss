@@ -92,6 +92,7 @@
         .dropdown-menu{
             left: -100% !important;
             min-width: 14rem;
+            
             @include respond(phone-land){
                 left: -8rem !important;
             }
