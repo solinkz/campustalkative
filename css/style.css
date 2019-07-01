@@ -97,7 +97,7 @@ a:hover {
   .page-title-sub {
     display: inline-block;
     padding: 0 1rem;
-    font-weight: 300; }
+    font-weight: 500; }
 
 .text-primary {
   color: #f6891f !important; }
@@ -810,7 +810,8 @@ a:hover {
           padding-left: 15px;
           max-width: 960px; } }
     #app-main-tertiary main.content .main-content {
-      margin-top: 8rem; }
+      margin-top: 8rem;
+      margin-bottom: 0rem; }
       @media (min-width: 62em) {
         #app-main-tertiary main.content .main-content {
           margin-top: 6rem; } }
@@ -1251,7 +1252,8 @@ a:hover {
 
 .notification {
   display: block;
-  margin: 3rem 0 2rem; }
+  margin: 3rem 0 0;
+  padding-bottom: 2rem; }
   .notification-timeline {
     padding: 1.5rem; }
   .notification-date {
