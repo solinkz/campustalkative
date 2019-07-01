@@ -94,6 +94,10 @@ a:hover {
       padding: 2rem 3rem;
       box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
       z-index: 1; } }
+  .page-title-sub {
+    display: inline-block;
+    padding: 0 1rem;
+    font-weight: 300; }
 
 .text-primary {
   color: #f6891f !important; }
@@ -787,12 +791,12 @@ a:hover {
           padding: 0 1.5rem;
           padding-bottom: 6rem; } }
   #app-main-tertiary {
-    background-color: #f7f7f7;
+    background-color: #fff;
     min-height: 100vh; }
-    #app-main-tertiary .nav-main {
+    #app-main-tertiary .nav-main--top {
       display: none; }
       @media (min-width: 62em) {
-        #app-main-tertiary .nav-main {
+        #app-main-tertiary .nav-main--top {
           display: flex; } }
     #app-main-tertiary main.content .container {
       margin: 0;
@@ -806,7 +810,10 @@ a:hover {
           padding-left: 15px;
           max-width: 960px; } }
     #app-main-tertiary main.content .main-content {
-      margin-top: 6rem; }
+      margin-top: 8rem; }
+      @media (min-width: 62em) {
+        #app-main-tertiary main.content .main-content {
+          margin-top: 6rem; } }
     #app-main-tertiary main.content .news-card {
       border-radius: 0; }
       @media (min-width: 62em) {
@@ -921,12 +928,14 @@ a:hover {
         padding: 0; } }
   .nav-sub {
     display: flex;
+    align-items: center;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     background-color: #fff;
     padding: 1rem 2rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     z-index: 5; }
     @media (min-width: 62em) {
       .nav-sub {
@@ -1239,6 +1248,44 @@ a:hover {
       .main-content--right {
         display: block;
         flex: calc(40% - 5rem) 0 0; } }
+
+.notification {
+  display: block;
+  margin: 3rem 0 2rem; }
+  .notification-timeline {
+    padding: 1.5rem; }
+  .notification-date {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: #303030;
+    margin-bottom: 1rem; }
+  .notification-content {
+    background-color: #fff;
+    padding: .5rem 1.5rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1); }
+  .notification-item {
+    padding: 1rem 0; }
+    .notification-item:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .notification-type-icon {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 1px solid #f6891f;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .notification-type-icon img {
+      width: 2.5rem; }
+  .notification-text {
+    font-weight: 500;
+    margin-bottom: 0 !important;
+    line-height: 1.2; }
+  .notification-time {
+    font-size: 1rem; }
 
 .page-extra {
   background-color: #fff;

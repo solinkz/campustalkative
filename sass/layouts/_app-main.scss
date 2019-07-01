@@ -42,12 +42,12 @@
 
 
    &-tertiary{
-        background-color: $color-lighter-grey;
+        background-color: $color-white;
         min-height: 100vh;
     
         .nav{
     
-            &-main{
+            &-main--top{
                 display: none;
                 @include respond(desktop){
                     display: flex;
@@ -71,11 +71,11 @@
             }
     
             .main-content{
-                margin-top: 6rem;
+                margin-top: 8rem;
     
-                // @include respond(desktop){
-                //     margin-top: 6rem;
-                // }
+                @include respond(desktop){
+                    margin-top: 6rem;
+                }
             }
         
             .news-card{

@@ -80,4 +80,10 @@ a{
         box-shadow: 0 0 .5rem rgba($color-black, .1);
         z-index: 1;
     }
+
+    &-sub{
+        display: inline-block;
+        padding: 0 1rem;
+        font-weight: 300;
+    }
 }
