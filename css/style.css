@@ -810,8 +810,8 @@ a:hover {
           padding-left: 15px;
           max-width: 960px; } }
     #app-main-tertiary main.content .main-content {
-      margin-top: 8rem;
-      margin-bottom: 0rem; }
+      margin: 0;
+      padding: 6rem 0; }
       @media (min-width: 62em) {
         #app-main-tertiary main.content .main-content {
           margin-top: 6rem; } }
@@ -1253,7 +1253,7 @@ a:hover {
 .notification {
   display: block;
   margin: 3rem 0 0;
-  padding-bottom: 2rem; }
+  padding-bottom: 3rem; }
   .notification-timeline {
     padding: 1.5rem; }
   .notification-date {
@@ -1267,7 +1267,10 @@ a:hover {
     background-color: #fff;
     padding: .5rem 1.5rem;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1); }
+    .notification-content a {
+      color: #303030; }
   .notification-item {
+    display: block;
     padding: 1rem 0; }
     .notification-item:not(:last-child) {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1); }

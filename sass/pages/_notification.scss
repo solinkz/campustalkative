@@ -1,7 +1,7 @@
 .notification{
     display: block;
     margin: 3rem 0 0;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 
 
     &-timeline{
@@ -21,9 +21,13 @@
         padding: .5rem 1.5rem;
         box-shadow: 0 0 .5rem rgba($color-black , .1);
         
+        a{
+            color: $color-secondary;
+        }
         
     }
     &-item{
+        display: block;
         padding: 1rem 0;
 
         &:not(:last-child){
