@@ -2,8 +2,10 @@
 
 
     &-circle{
-        clip-path: circle(50% at 50% 50%);
+        // clip-path: circle(50% at 50% 50%);
+        border-radius: 50%;
         text-align: center;
+        overflow: hidden;
 
         &--lg{
             width: 4rem;
@@ -15,18 +17,18 @@
         }
         &--profile{
             width: auto;
-            height: 18rem;
+            height: 20rem;
             
             @include respond(tab){
                 
                 width: auto;
-                height: 14rem;
+                height: 16rem;
             }
         }
     }
 
     &-avatar{
-        
+        width: auto;
         height: 100%;
     }
 }

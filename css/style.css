@@ -536,8 +536,9 @@ a:hover {
   padding: .5rem 2rem; }
 
 .img-circle {
-  clip-path: circle(50% at 50% 50%);
-  text-align: center; }
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden; }
   .img-circle--lg {
     width: 4rem;
     height: 4rem; }
@@ -546,13 +547,14 @@ a:hover {
     height: 3.8rem; }
   .img-circle--profile {
     width: auto;
-    height: 18rem; }
+    height: 20rem; }
     @media (min-width: 48em) {
       .img-circle--profile {
         width: auto;
-        height: 14rem; } }
+        height: 16rem; } }
 
 .img-avatar {
+  width: auto;
   height: 100%; }
 
 .iua {
@@ -1379,14 +1381,24 @@ a:hover {
     align-items: center;
     width: 22rem;
     height: 22rem;
-    clip-path: circle(50% at 50% 50%);
-    background-image: radial-gradient(rgba(246, 137, 31, 0.4) 0%, rgba(246, 137, 31, 0.4) 62%, rgba(246, 137, 31, 0.2) 62%);
-    margin-bottom: 2rem; }
+    border-radius: 50%;
+    border: 2px dashed #f6891f;
+    margin-bottom: 2rem;
+    background-color: #fff; }
     @media (min-width: 48em) {
       .profile-img {
         width: 18rem;
-        height: 18rem;
-        background-image: radial-gradient(rgba(246, 137, 31, 0.3) 0%, rgba(246, 137, 31, 0.3) 60%, rgba(246, 137, 31, 0.1) 60%); } }
+        height: 18rem; } }
+    .profile-img-bind {
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      text-align: center;
+      overflow: hidden; }
+      @media (min-width: 48em) {
+        .profile-img-bind {
+          width: 16rem;
+          height: 16rem; } }
   .profile-name {
     font-weight: 700;
     font-size: 2rem;
@@ -1430,6 +1442,25 @@ a:hover {
         padding: 2rem;
         min-height: 70vh;
         border-top: none; } }
+
+div#settingsModal .modal-dialog {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  bottom: 0; }
+  @media (min-width: 48em) {
+    div#settingsModal .modal-dialog {
+      position: relative;
+      width: auto;
+      margin: .3rem;
+      border-radius: .3rem; } }
+
+div#settingsModal .modal-content {
+  border-radius: 2rem 2rem 0 0; }
+  @media (min-width: 48em) {
+    div#settingsModal .modal-content {
+      border-radius: .3rem; } }
 
 .tv {
   position: relative;

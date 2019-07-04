@@ -45,21 +45,39 @@
         @include justifyAlignCenter;
         width: 22rem;
         height: 22rem;
-        clip-path: circle(50% at 50% 50%);
-        background-image: radial-gradient(rgba($color-primary, .4) 0%, rgba($color-primary, .4) 62%, rgba($color-primary, .2) 62%);
+        border-radius: 50%;
+        border: 2px dashed $color-primary;
+        
+        // clip-path: circle(50% at 50% 50%);
+        // background-image: radial-gradient(rgba($color-primary, .4) 0%, rgba($color-primary, .4) 62%, rgba($color-primary, .2) 62%);
         margin-bottom: 2rem;
+        background-color: $color-white;
         // animation: pulseColor .2s ease-in-out  infinite  ;
 
 
         @include respond(tab){
             width: 18rem;
             height: 18rem;
-            background-image: radial-gradient(rgba($color-primary, .3) 0%, rgba($color-primary, .3) 60%, rgba($color-primary, .1) 60%);
+            // background-image: radial-gradient(rgba($color-primary, .3) 0%, rgba($color-primary, .3) 60%, rgba($color-primary, .1) 60%);
 
+        }
+
+        &-bind{
+            width: 20rem;
+            height: 20rem;
+            border-radius: 50%;
+            text-align: center;
+            overflow: hidden;
+            
+            @include respond(tab){
+                
+                width: 16rem;
+                height: 16rem;
+            }
         }
     }
 
-
+    
     &-name{
         font-weight: 700;
         font-size: 2rem;
@@ -137,3 +155,37 @@
     }
 
 }
+
+// SETTING MODAL CUSTOMIZATION
+
+
+    div#settingsModal{
+
+        .modal-dialog{
+            position: absolute;
+            max-width: 100%;
+            width: 100%;
+            margin: 0;
+            bottom: 0;
+        
+            @include respond(tab){
+                position: relative;
+                width: auto;
+                margin: .3rem;
+                border-radius: .3rem;
+
+                
+            }
+
+         }
+
+         .modal-content{
+             border-radius: 2rem 2rem 0 0;
+             @include respond(tab){
+               
+                border-radius: .3rem;
+
+                
+            }
+         }
+    }
