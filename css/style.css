@@ -1388,13 +1388,32 @@ a:hover {
     width: 22rem;
     height: 22rem;
     border-radius: 50%;
-    border: 2px dashed #f6891f;
+    border: 2px solid #f6891f;
     margin-bottom: 2rem;
-    background-color: #fff; }
+    background-color: #fff;
+    position: relative; }
     @media (min-width: 48em) {
       .profile-img {
         width: 18rem;
         height: 18rem; } }
+    .profile-img::before {
+      content: '';
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background-color: #f6891f;
+      position: absolute;
+      top: 0;
+      left: 95%; }
+    .profile-img::after {
+      content: '';
+      width: 1.5rem;
+      height: 1.4rem;
+      border-radius: 50%;
+      background-color: #f6891f;
+      position: absolute;
+      bottom: 0;
+      right: 90%; }
     .profile-img-bind {
       width: 20rem;
       height: 20rem;
