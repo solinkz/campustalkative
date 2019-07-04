@@ -1455,7 +1455,7 @@ a:hover {
       background-repeat: no-repeat;
       background-position: 100% 50%; }
       .profile-setting-list li.nav-item:not(:last-child) {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+        margin-bottom: 1rem; }
   .profile-post {
     background-color: #fff;
     width: 100%;
@@ -1476,7 +1476,7 @@ div#settingsModal {
     width: 100%;
     margin: 0;
     bottom: 0;
-    animation: fadeIn  ease-in .3s; }
+    animation: fadeIn  ease-in .5s; }
     @media (min-width: 48em) {
       div#settingsModal .modal-dialog {
         position: relative;
