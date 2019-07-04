@@ -6,6 +6,12 @@
     opacity: 1;
     transform: translate(-50%, -20%); } }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 *,
 *:after,
 *:before {
@@ -1443,24 +1449,26 @@ a:hover {
         min-height: 70vh;
         border-top: none; } }
 
-div#settingsModal .modal-dialog {
-  position: absolute;
-  max-width: 100%;
-  width: 100%;
-  margin: 0;
-  bottom: 0; }
-  @media (min-width: 48em) {
-    div#settingsModal .modal-dialog {
-      position: relative;
-      width: auto;
-      margin: .3rem;
-      border-radius: .3rem; } }
-
-div#settingsModal .modal-content {
-  border-radius: 2rem 2rem 0 0; }
-  @media (min-width: 48em) {
-    div#settingsModal .modal-content {
-      border-radius: .3rem; } }
+div#settingsModal {
+  background-color: rgba(0, 0, 0, 0.7); }
+  div#settingsModal .modal-dialog {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+    animation: fadeIn  ease-in .3s; }
+    @media (min-width: 48em) {
+      div#settingsModal .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: .3rem;
+        border-radius: .3rem; } }
+  div#settingsModal .modal-content {
+    border-radius: 2rem 2rem 0 0; }
+    @media (min-width: 48em) {
+      div#settingsModal .modal-content {
+        border-radius: .3rem; } }
 
 .tv {
   position: relative;

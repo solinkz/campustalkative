@@ -160,13 +160,14 @@
 
 
     div#settingsModal{
-
+        background-color: rgba($color-black , .7);
         .modal-dialog{
             position: absolute;
             max-width: 100%;
             width: 100%;
             margin: 0;
             bottom: 0;
+            animation: fadeIn  ease-in .3s ;
         
             @include respond(tab){
                 position: relative;
