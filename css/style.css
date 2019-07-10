@@ -860,6 +860,8 @@ a:hover {
   @media (min-width: 48em) {
     .header {
       height: 70vh; } }
+  .header-blur-filter {
+    filter: blur(3px) brightness(0.7); }
   .header-logo-box {
     position: absolute;
     top: 2rem;
@@ -1360,16 +1362,17 @@ a:hover {
   position: absolute;
   display: none;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  bottom: 2.4rem;
+  bottom: 0;
   padding: 2rem;
   border-radius: 3rem 3rem 0 0;
   background-color: #fff;
   height: 35vh;
   box-shadow: 0 -1rem 1rem rgba(0, 0, 0, 0.1);
-  animation: slideUp .5s ease-out; }
+  animation: slideUp .5s ease-out;
+  z-index: 3; }
   @media (min-width: 48em) {
     .section-main {
       height: auto;
@@ -1378,7 +1381,8 @@ a:hover {
       position: relative;
       bottom: 0;
       box-shadow: none;
-      display: block; } }
+      display: block;
+      animation: none; } }
   .section-main .main-caption {
     font-size: 1.9rem;
     text-align: center;
@@ -1397,9 +1401,11 @@ a:hover {
         padding: 1rem 0; } }
     .section-main .main-cta--btn {
       width: 28rem;
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: space-between; }
       .section-main .main-cta--btn:not(:last-child) {
-        margin-bottom: 1rem; }
+        margin-bottom: 2.5rem; }
         @media (min-width: 62em) {
           .section-main .main-cta--btn:not(:last-child) {
             margin-bottom: 0;
@@ -1415,6 +1421,18 @@ a:hover {
       height: 100vh;
       background-image: linear-gradient(to bottom, #f6891f 0%, #f6891f 50%, #fff 50%);
       padding-bottom: 3rem; } }
+
+.blur-bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/dev.jpg);
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: .5;
+  filter: blur(1rem); }
 
 .profile {
   width: 100%;

@@ -11,6 +11,10 @@
     position: relative;
 
 
+    &-blur-filter{
+        filter: blur(3px) brightness(0.7);
+    }
+
 
 
     &-logo-box{

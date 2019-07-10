@@ -38,14 +38,21 @@
             <i class="material-icons">keyboard_arrow_up</i></a>
         </button>
    </header>
-
+   <!-- <div class="blur-bg"></div> -->
    <main class="main">
        <section class="section-main">
            
            <h2 class="main-caption">we are a community, we gist, connect, interact and talk about matters of the youth </h2>
            <div class="main-cta">
-               <a href="views/login.html" class="btn btn-primary main-cta--btn rounded-pill">Login</a>
-               <a href="#" class="btn btn-primary main-cta--btn rounded-pill">Explore</a>
+               <a href="views/login.html" class="btn btn-primary main-cta--btn rounded-pill">
+                Login
+                <i class="material-icons">lock_open</i>
+                </a>
+               <a href="#" class="btn btn-primary main-cta--btn rounded-pill">
+                   Explore
+                <i class="material-icons outlined">explore</i>
+
+                </a>
            </div>
             <!-- <button class="main-btn-shrink">
                 <i class="material-icons">keyboard_arrow_down</i></a>
@@ -64,17 +71,31 @@
 
     $(document).ready(function(){
         
-        $('.header-btn-expand').click(function(){
+        $('.header-btn-expand').click(function(event){
+
+            event.stopPropagation();
             $(this).hide();
 
-            setTimeout(() => {
-                $('.header').css('height', '65vh');
-                $('.header-text-box').css('bottom', '20%');
+            // setTimeout(() => {
                 
-            }, 350);
-
+            // }, 100);
+            $('.header-text-box').css('bottom', '50%');
+            
+            $('.header').addClass('header-blur-filter');
             $('.section-main').css('display','flex');
+            
         });
+
+       
+                $('.header').click(function(){
+
+                        $(this).removeClass('header-blur-filter');
+                        $('.header-btn-expand').show();
+                        $('.section-main').slideUp();
+                        $('.header-text-box').css('bottom', '30%');
+            
+                    
+                });
 
     });
 
