@@ -4,10 +4,16 @@
         border-radius: 0;
         background-color: $color-white;
         position: relative;
-        
-
+        bottom: 0;
+        box-shadow: none;
+        display: block;
     }
+
     position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     bottom: 2.4rem;
     padding: 2rem;
@@ -15,6 +21,7 @@
     background-color: $color-white;
     height: 35vh;
     box-shadow: 0 -1rem 1rem rgba(0, 0, 0, .1);
+    animation: slideUp .5s ease-out ;
 
     .main-caption{
         font-size: 1.9rem;
@@ -49,6 +56,27 @@
           }
         }
     }
+
+//     .main-btn-shrink{
+//        @include respond(tab){
+//            display: none;
+//        }
+//        position: absolute;
+//        bottom: 0;
+//        left: 50%;
+//        transform: translateX(-50%);
+//        background: transparent;
+//        border: 1px solid $color-primary;
+//        border-radius: 50%;
+//        width: 5rem;
+//        height: 5rem;
+//        backface-visibility: hidden;
+//        color: $color-primary;
+//        z-index: 4;
+//        animation: joggle 1.5s ease .5s  infinite ;
+//         cursor: pointer;
+//    }
+
 }
 
 .section-auth{

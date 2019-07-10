@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
     <title>Campustalkative - we talk to connect</title>
@@ -29,8 +31,12 @@
                 <span class="header-text-box--line header-text-box--line-ll"></span>
                 <span class="header-text-box--line header-text-box--line-lr"></span>
             </h1>
+
         </div>
-      
+        
+        <button class="header-btn-expand">
+            <i class="material-icons">keyboard_arrow_up</i></a>
+        </button>
    </header>
 
    <main class="main">
@@ -41,8 +47,37 @@
                <a href="views/login.html" class="btn btn-primary main-cta--btn rounded-pill">Login</a>
                <a href="#" class="btn btn-primary main-cta--btn rounded-pill">Explore</a>
            </div>
+            <!-- <button class="main-btn-shrink">
+                <i class="material-icons">keyboard_arrow_down</i></a>
+            </button> -->
        </section>
    </main>
   
+
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
 </body>
+
 </html>
+
+<script>
+
+    $(document).ready(function(){
+        
+        $('.header-btn-expand').click(function(){
+            $(this).hide();
+
+            setTimeout(() => {
+                $('.header').css('height', '65vh');
+                $('.header-text-box').css('bottom', '20%');
+                
+            }, 350);
+
+            $('.section-main').css('display','flex');
+        });
+
+    });
+
+</script>

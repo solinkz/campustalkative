@@ -2,7 +2,7 @@
      @include respond(tab){
         height: 70vh;  
     }
-    height: 65vh;
+    height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba($color-primary, .92), rgba($color-primary, .92)),
                       url(../img/ctland.jpg);
@@ -34,7 +34,7 @@
     &-text-box{
         display: block;
         position: absolute;
-        bottom: 30%;
+        bottom: 40%;
         left: 50%;
         width: 70%;
         text-align: center;
@@ -107,7 +107,24 @@
         }
     }
 
-   
+   &-btn-expand{
+       @include respond(tab){
+           display: none;
+       }
+       position: absolute;
+       bottom: 10%;
+       left: 50%;
+       transform: translateX(-50%);
+       background: transparent;
+       border: 1px solid $color-white;
+       border-radius: 50%;
+       width: 5rem;
+       height: 5rem;
+       backface-visibility: hidden;
+       color: $color-white;
+       animation: joggle 1.5s ease .5s  infinite ;
+        cursor: pointer;
+   }
 
 
 }

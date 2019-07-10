@@ -12,6 +12,20 @@
   100% {
     opacity: 1; } }
 
+@keyframes slideUp {
+  0% {
+    transform: translateY(20%); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes joggle {
+  0% {
+    transform: translate(-50%, -0.8rem); }
+  30% {
+    transform: translate(-50%, 0.8rem); }
+  100% {
+    transform: translate(-50%, -0.8rem); } }
+
 *,
 *:after,
 *:before {
@@ -837,7 +851,7 @@ a:hover {
           position: absolute; } }
 
 .header {
-  height: 65vh;
+  height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(246, 137, 31, 0.92), rgba(246, 137, 31, 0.92)), url(../img/ctland.jpg);
   background-size: cover;
@@ -860,7 +874,7 @@ a:hover {
   .header-text-box {
     display: block;
     position: absolute;
-    bottom: 30%;
+    bottom: 40%;
     left: 50%;
     width: 70%;
     text-align: center;
@@ -917,6 +931,23 @@ a:hover {
         @media (min-width: 36em) {
           .header-text-box--line-lb {
             width: 7rem; } }
+  .header-btn-expand {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    backface-visibility: hidden;
+    color: #fff;
+    animation: joggle 1.5s ease .5s  infinite;
+    cursor: pointer; }
+    @media (min-width: 48em) {
+      .header-btn-expand {
+        display: none; } }
 
 .footer {
   background-color: #fff;
@@ -1327,19 +1358,27 @@ a:hover {
 
 .section-main {
   position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   bottom: 2.4rem;
   padding: 2rem;
   border-radius: 3rem 3rem 0 0;
   background-color: #fff;
   height: 35vh;
-  box-shadow: 0 -1rem 1rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 -1rem 1rem rgba(0, 0, 0, 0.1);
+  animation: slideUp .5s ease-out; }
   @media (min-width: 48em) {
     .section-main {
       height: auto;
       border-radius: 0;
       background-color: #fff;
-      position: relative; } }
+      position: relative;
+      bottom: 0;
+      box-shadow: none;
+      display: block; } }
   .section-main .main-caption {
     font-size: 1.9rem;
     text-align: center;
