@@ -876,11 +876,11 @@ a:hover {
   .header-text-box {
     display: block;
     position: absolute;
-    bottom: 40%;
+    bottom: 45%;
     left: 50%;
     width: 70%;
     text-align: center;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -40%);
     animation: moveInBottom .5s ease-out; }
     @media (min-width: 48em) {
       .header-text-box {
@@ -1369,7 +1369,7 @@ a:hover {
   padding: 2rem;
   border-radius: 3rem 3rem 0 0;
   background-color: #fff;
-  height: 35vh;
+  height: 40vh;
   box-shadow: 0 -1rem 1rem rgba(0, 0, 0, 0.1);
   animation: slideUp .5s ease-out;
   z-index: 3; }
