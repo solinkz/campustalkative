@@ -186,6 +186,7 @@
 
     div#settingsModal{
         background-color: rgba($color-black , .7);
+        filter: blur(10);
         .modal-dialog{
             position: absolute;
             max-width: 100%;

@@ -1,5 +1,8 @@
 .header{
-    height: 70vh;
+     @include respond(tab){
+        height: 70vh;  
+    }
+    height: 65vh;
     width: 100%;
     background-image: linear-gradient(rgba($color-primary, .92), rgba($color-primary, .92)),
                       url(../img/ctland.jpg);
@@ -31,13 +34,15 @@
     &-text-box{
         display: block;
         position: absolute;
-        bottom: 20%;
+        bottom: 30%;
         left: 50%;
         width: 70%;
         text-align: center;
         transform: translate(-50% ,-20%);
         animation: moveInBottom .5s ease-out;
-
+        @include respond(tab){
+            bottom: 20%;
+        }
 
         &--text{
             display: inline;

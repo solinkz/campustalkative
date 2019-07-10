@@ -1,4 +1,21 @@
 .section-main{
+    @include respond(tab){
+        height: auto;
+        border-radius: 0;
+        background-color: $color-white;
+        position: relative;
+        
+
+    }
+    position: absolute;
+    width: 100%;
+    bottom: 2.4rem;
+    padding: 2rem;
+    border-radius: 3rem 3rem 0 0 ;
+    background-color: $color-white;
+    height: 35vh;
+    box-shadow: 0 -1rem 1rem rgba(0, 0, 0, .1);
+
     .main-caption{
         font-size: 1.9rem;
         text-align: center;
