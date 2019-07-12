@@ -556,7 +556,7 @@ a:hover {
   background-color: #fcfcfc; }
 
 .btn-sm {
-  padding: .5rem 2rem; }
+  padding: .5rem 2rem !important; }
 
 .img-circle {
   border-radius: 50%;
@@ -577,7 +577,7 @@ a:hover {
         height: 16rem; } }
 
 .img-avatar {
-  width: auto;
+  width: auto !important;
   height: 100%; }
 
 .iua {
@@ -712,6 +712,43 @@ a:hover {
     min-height: 70vh; }
   .search-item:not(:last-child) {
     margin-bottom: 1rem; }
+
+.suggestion {
+  padding: 1rem;
+  margin-bottom: 1rem; }
+  .suggestion-card {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 28rem;
+    max-width: 28rem;
+    height: 12rem;
+    border-radius: 8px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15); }
+    .suggestion-card-name {
+      display: block; }
+      .suggestion-card-name a {
+        color: #000; }
+    .suggestion-card-school {
+      line-height: 1.2;
+      font-size: 1.3rem; }
+    .suggestion-card-btn {
+      padding: .25rem 1rem;
+      background: #fff;
+      border: 1px solid #f6891f;
+      border-radius: 8px;
+      font-size: 1.2rem !important;
+      text-align: center;
+      width: 6rem; }
+    .suggestion-card .media {
+      height: 100%; }
+    .suggestion-card .media-body {
+      padding-left: 1.5rem;
+      padding-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%; }
 
 .video-js {
   font-size: 1rem;
@@ -1293,14 +1330,15 @@ a:hover {
         padding: 3rem; } }
 
 .main-content {
-  display: flex;
-  flex-direction: row;
+  display: block;
   padding: 0;
   width: 100%;
   margin-top: 8rem;
   margin-bottom: 6rem; }
   @media (min-width: 62em) {
     .main-content {
+      display: flex;
+      flex-direction: row;
       margin-top: 0rem;
       margin-bottom: 0;
       padding: 2rem; } }
