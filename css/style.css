@@ -730,7 +730,8 @@ a:hover {
       display: block; }
       .suggestion-card-name a {
         font-size: 1.8rem;
-        color: #000; }
+        color: #000;
+        font-weight: 500; }
     .suggestion-card-school {
       line-height: 1.2;
       font-size: 1.4rem; }
