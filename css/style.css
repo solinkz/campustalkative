@@ -99,6 +99,7 @@ a:hover {
 .page-title {
   position: fixed;
   top: .6rem;
+  left: 0;
   text-transform: uppercase;
   font-weight: 500;
   color: #f6891f;
@@ -1164,6 +1165,24 @@ a:hover {
     display: inline-flex;
     border: 1px solid rgba(0, 0, 0, 0.15); }
 
+.masonry {
+  /* Masonry container */
+  display: flex;
+  flex-flow: wrap;
+  max-height: 800px;
+  margin-left: -8px;
+  /* Adjustment for the gutter */
+  width: 100%; }
+
+.masonry-item {
+  /* Masonry bricks or child elements */
+  display: inline-block !important;
+  margin: 0 0 1em;
+  width: 100%; }
+
+.grid-sizer {
+  width: 33.3%; }
+
 .forum {
   margin-top: 3rem;
   position: relative; }
@@ -1359,7 +1378,7 @@ a:hover {
     margin-bottom: 1rem; }
 
 .section-main {
-  position: absolute;
+  position: fixed;
   display: none;
   flex-direction: column;
   justify-content: space-around;

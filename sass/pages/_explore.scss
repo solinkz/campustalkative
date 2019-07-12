@@ -34,3 +34,24 @@
         border: 1px solid rgba($color-black , .15);
     }
 }
+
+.masonry { /* Masonry container */
+//   column-count: 4;
+//   column-gap: 1em;
+  display: flex;
+  flex-flow: wrap;
+  max-height: 800px;
+  margin-left: -8px; /* Adjustment for the gutter */
+  width: 100%;
+}
+
+.masonry-item { /* Masonry bricks or child elements */
+//   background-color: #eee;
+  display: inline-block !important ;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+.grid-sizer{
+    width: 33.3%;
+}

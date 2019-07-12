@@ -34,7 +34,7 @@
 
         </div>
         
-        <button class="header-btn-expand">
+        <button class="header-btn-expand mobile-phone-only">
             <i class="material-icons">keyboard_arrow_up</i></a>
         </button>
    </header>
@@ -86,7 +86,8 @@
             
         });
 
-       
+           
+            if(window.screen.width < 768){
                 $('.header').click(function(){
 
                         $(this).removeClass('header-blur-filter');
@@ -96,6 +97,8 @@
             
                     
                 });
+                
+            }
 
     });
 
