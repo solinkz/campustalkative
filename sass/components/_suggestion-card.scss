@@ -1,7 +1,20 @@
+.suggestion.card{
+    overflow: visible;
+}
 .suggestion{
     padding: 1rem;
     margin-bottom: 1rem;
+    position: relative;
+    height: 24rem;
+   
 
+    &-slider{
+        position: absolute;
+        left: -1.5rem;
+        width: calc(100% + 2.5rem);
+        // transform: scale(1.1);
+
+    }
 
     &-card{
         background-color: $color-white;
@@ -9,10 +22,10 @@
         margin: 1rem 0;
         width: 30rem;
         max-width: 30rem;
-        height: 12rem;
+        height: 15rem;
         border-radius: 8px;
         border: 1px solid rgba($color-black, .1);
-        box-shadow: 0 0 1rem rgba($color-black, .15);
+        box-shadow: 0 0 1rem rgba($color-black, .1);
 
 
         &-name{
