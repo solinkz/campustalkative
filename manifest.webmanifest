@@ -2,19 +2,20 @@
     "lang" : "en",
     "name" : "Campustalkative - we talk to connect",
     "scope" : "/campustalkative/",
-    "display" : "browser",
-    "start_url" : "https://solinkz.github.io/campustalkative/",
+    "display" : "standalone",
+    "start_url" : ".",
     "short_name" : "Campustalkative",
     "theme_color" : "transparent",
     "description" : "",
     "orientation" : "any",
     "background_color" : "transparent",
-    "related_applications" : "",
-    "prefer_related_applications" : "false",
+    // "related_applications" : "[]",
+    // "prefer_related_applications" : "false",
     "generated" : "true",
     "icons" : [
         {
-            "src": "https://solinkz.github.io/campustalkative/campustalkative/img/favicon.ico",
-            "sizes": "16x16"
+            "src": "img/CT_Icon.png",
+            "sizes": "144x144",
+            "type" : "image/png"
         }
     ]}
